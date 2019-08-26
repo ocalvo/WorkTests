@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.376s">Choose which notifications you want to see pop-ups for,</p>
+      <p region="speaker" begin="3.376s" end="7.094s">and whether to hide them while you watch movies or TV shows.</p>
+      <p region="speaker" begin="7.094s" end="11.543s">In Settings,</p>
+      <p region="speaker" begin="11.543s" end="17.791s">go to Preferences &gt; Notifications.</p>
+      <p region="speaker" begin="17.791s" end="23.632s">Turn off all notifications with this master switch.</p>
+      <p region="speaker" begin="23.632s" end="31.454s">Or select a category, and choose the option you prefer.</p>
+      <p region="speaker" begin="31.454s" end="36.615s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

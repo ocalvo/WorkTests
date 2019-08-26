@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.PivotView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">      
+        <Pivot Title="Pivot">
+            <PivotItem Header="Text">
+                   <StackPanel Orientation="Vertical">
+                        <Button Content="Placeholder"/>
+                    <TextBlock TextWrapping="Wrap" Text="This is a simple sample for the pivot control adding text."/>
+                    </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Buttons">
+                <Grid>
+                    <TextBlock TextWrapping="Wrap" Text="What do you call a witch that lives on a beach?"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Scrolling Text WOW!">
+                <Grid>
+                    <TextBlock TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" Text="A sandwich"/>
+                 </Grid>
+            </PivotItem>      
+            <PivotItem Header="More">
+                    <StackPanel Orientation="Vertical">
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Disabled Button" IsEnabled="False"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                    </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

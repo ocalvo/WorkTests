@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.492s">Include your party chat audio when you</p>
+      <p region="speaker" begin="2.492s" end="5.052s">broadcast gameplay with Twitch.</p>
+      <p region="speaker" begin="5.052s" end="7.419s">While you’re in a party and playing a game,</p>
+      <p region="speaker" begin="7.419s" end="19.945s">snap Twitch, select Broadcast, and choose Settings.</p>
+      <p region="speaker" begin="19.945s" end="25.400s">Check whether the option to broadcast party chat is selected.</p>
+      <p region="speaker" begin="25.400s" end="30.560s">Then, start the broadcast.</p>
+      <p region="speaker" begin="35.589s" end="37.103s">Each friend in your party can choose</p>
+      <p region="speaker" begin="37.103s" end="40.557s">whether to include their chat audio in the broadcast.</p>
+      <p region="speaker" begin="40.557s" end="42.294s">In the Party area of the guide,</p>
+      <p region="speaker" begin="42.294s" end="45.606s">they’ll see the option Include my audio.</p>
+      <p region="speaker" begin="45.606s" end="48.115s">Anyone who does not opt in can still chat with the party,</p>
+      <p region="speaker" begin="48.115s" end="51.000s">but their audio won't be included in the broadcast.</p>
+      <p region="speaker" begin="51.000s" end="54.789s">Party members on Windows 10 PCs can be included too.</p>
+      <p region="speaker" begin="54.789s" end="59.035s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

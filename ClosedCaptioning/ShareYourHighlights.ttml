@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="6.217s">Don’t keep your great moments to yourself, share them with all your Xbox Live friends.</p>
+      <p region="speaker" begin="6.217s" end="9.570s">Post comments to your activity feed.</p>
+      <p region="speaker" begin="9.570s" end="10.677s">In the Community area,</p>
+      <p region="speaker" begin="10.677s" end="19.728s">select the box at the top of the activity feed and start typing.</p>
+      <p region="speaker" begin="19.728s" end="25.295s">Or press the video icon to go to your game clips.</p>
+      <p region="speaker" begin="25.295s" end="32.914s">Find a game clip, press the Menu button on your controller, and choose Share.</p>
+      <p region="speaker" begin="32.914s" end="39.802s">And if you see that one of your friends or games you follow posted something cool,</p>
+      <p region="speaker" begin="39.802s" end="42.982s">share it out to your feed. Select the activity,</p>
+      <p region="speaker" begin="42.982s" end="50.113s">choose Share, and then where you want to share it.</p>
+      <p region="speaker" begin="50.113s" end="55.812s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

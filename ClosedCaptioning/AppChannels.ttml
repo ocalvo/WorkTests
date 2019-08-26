@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.956s">Instead of looking in every video app</p>
+      <p region="speaker" begin="2.956s" end="4.500s">to find a movie or TV show,</p>
+      <p region="speaker" begin="4.500s" end="7.142s">use OneGuide and see them together.</p>
+      <p region="speaker" begin="7.142s" end="9.864s">OneGuide has app channels that show you</p>
+      <p region="speaker" begin="9.864s" end="12.018s">what’s available in each video app.</p>
+      <p region="speaker" begin="12.018s" end="16.396s">Browse your favorite app channels, and discover new ones.</p>
+      <p region="speaker" begin="16.396s" end="18.398s">When you find one you like,</p>
+      <p region="speaker" begin="18.398s" end="21.618s">mark it as a favorite by selecting the star next to the name.</p>
+      <p region="speaker" begin="21.618s" end="26.535s">To add more, select App channels in the navigation bar.</p>
+      <p region="speaker" begin="26.535s" end="31.360s">Your favorite app channels are listed here,</p>
+      <p region="speaker" begin="31.360s" end="34.448s">and also more video apps you can explore.</p>
+      <p region="speaker" begin="34.448s" end="38.918s">More app channels brings you to the full browse list,</p>
+      <p region="speaker" begin="38.918s" end="43.215s">You can easily dive into your favorite app channels too.</p>
+      <p region="speaker" begin="43.215s" end="47.126s">Select an app name to browse the channels from that app.</p>
+      <p region="speaker" begin="47.126s" end="56.666s">If OneGuide is in your Most Recently Used list on Home,</p>
+      <p region="speaker" begin="56.666s" end="58.118s">you can jump straight to your</p>
+      <p region="speaker" begin="58.118s" end="60.567s">favorite app channels from there.</p>
+      <p region="speaker" begin="60.567s" end="67.434s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.193s">To see or change your child’s privacy settings,</p>
+      <p region="speaker" begin="3.193s" end="5.773s">make sure you’re signed in as you.</p>
+      <p region="speaker" begin="5.773s" end="11.939s">Go to Settings . . . All settings.</p>
+      <p region="speaker" begin="11.939s" end="17.608s">Under Account . . . choose Family.</p>
+      <p region="speaker" begin="17.608s" end="20.585s">Select your child’s gamerpic.</p>
+      <p region="speaker" begin="20.585s" end="23.490s">If it isn’t there, add your child’s profile to your family</p>
+      <p region="speaker" begin="23.490s" end="26.284s">by selecting Add to family.</p>
+      <p region="speaker" begin="26.284s" end="30.144s">If you still don’t see their gamerpic, download their profile</p>
+      <p region="speaker" begin="30.144s" end="33.872s">by selecting Add new and following the steps.</p>
+      <p region="speaker" begin="33.872s" end="38.474s">If they don’t have an Xbox Live profile, you can also create one here.</p>
+      <p region="speaker" begin="38.474s" end="45.331s">After you select their gamerpic, choose Privacy &amp; online safety.</p>
+      <p region="speaker" begin="45.331s" end="51.203s">Smart defaults based on age are already set, and you can adjust them.</p>
+      <p region="speaker" begin="51.203s" end="55.114s">Select View details &amp; customize.</p>
+      <p region="speaker" begin="55.114s" end="57.806s">Read about and set each option the way you prefer.</p>
+      <p region="speaker" begin="57.806s" end="61.545s">Your child won’t be able to change these settings themselves.</p>
+      <p region="speaker" begin="61.545s" end="64.013s">When you’re done, go back a few screens and</p>
+      <p region="speaker" begin="64.013s" end="68.249s">select Access to content, which determines the rating levels</p>
+      <p region="speaker" begin="68.249s" end="73.187s">of games, TV, movies, and apps your child can use.</p>
+      <p region="speaker" begin="73.187s" end="80.074s">Web filtering limits Internet access while browsing on the Xbox One.</p>
+      <p region="speaker" begin="80.074s" end="87.968s">And Contact preferences lets you choose whether your child will get information and</p>
+      <p region="speaker" begin="87.968s" end="92.041s">promotional offers for things like music, video, and games.</p>
+      <p region="speaker" begin="92.041s" end="96.917s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

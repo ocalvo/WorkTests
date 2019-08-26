@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="MediaTestManaged.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaTestManaged"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Aquamarine" Margin="0,0,0,0" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition x:Name="mediaRow" Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="mediaCol" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <Button Click="OnCreateMPE">MPE</Button>
+            <Button Click="OnCreateME">ME</Button>
+            <Button Click="OnClear">Clear</Button>
+            <Button Click="OnToggleLayout">ToggleLayout</Button>
+            <Button Click="OnFoo">DoFoo</Button>
+            <Button Click="OnFullWindow">FullWindow</Button>
+            <ComboBox x:Name="sourceBox" SelectionChanged="OnUpdateSource">
+            </ComboBox>
+            <ComboBox x:Name="stretchMode" SelectedIndex="2">
+                <ComboBox.Items>
+                    <ComboBoxItem>Fill</ComboBoxItem>
+                    <ComboBoxItem>None</ComboBoxItem>
+                    <ComboBoxItem>Uniform</ComboBoxItem>
+                    <ComboBoxItem>UniformFill</ComboBoxItem>
+                </ComboBox.Items>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <CheckBox x:Name="enableMTC" Content="MTC" IsChecked="True"/>
+            <CheckBox x:Name="autoPlay" Content="AutoPlay" IsChecked="False" />
+            <CheckBox x:Name="poster" Content="Poster" IsChecked="False" />
+            <CheckBox x:Name="extPlayer" Content="ExtPlayer" IsChecked="False" />
+            <CheckBox x:Name="enableFullWindow" Content="Full Window"/>
+            <CheckBox x:Name="sizeChk" Content="Size"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBlock x:Name="Log"/>
+            <TextBox Text="Narrator should not read this" />
+        </StackPanel>
+        <Grid Grid.Row="3" x:Name="MediaPanel" >
+            <!-- 
+            <Grid.MaxHeight>
+                <Binding ElementName="defaultMPE" Path="ActualHeight" />
+            </Grid.MaxHeight>
+            <Grid.MaxWidth>
+                <Binding ElementName="defaultMPE" Path="ActualWidth" />
+            </Grid.MaxWidth>
+            -->
+            <!--
+            <ContentControl x:Name="VideoElementContainer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+                <MediaPlayerElement
+                    x:Name="defaultMPE"
+                    AutoPlay="false"
+                    AreTransportControlsEnabled="True"
+                    Source="ms-appx:///Assets/matroska_test_w1_1/test5.mkv">
+                </MediaPlayerElement>
+            </ContentControl>
+            -->
+            <!--
+            <MediaPlayerElement
+                    x:Name="defaultObj"
+                    AutoPlay="false"
+                    AreTransportControlsEnabled="True"
+                    Source="ms-appx:///Assets/matroska_test_w1_1/test5.mkv">
+            </MediaPlayerElement>
+            -->
+            <!--
+            <MediaElement x:Name="defaultObj" AutoPlay="True"
+                            Source="ms-appx:///Assets/matroska_test_w1_1/test5.mkv" 
+                            AreTransportControlsEnabled="True">
+            </MediaElement>
+            -->
+            <UserControl x:Name="defaultObj" Background="Red" IsTabStop="True" >
+                <Grid Background="{Binding ElementName=defaultObj, Path=Background}">
+                    <InkCanvas x:Name="inkCanvas" />
+                </Grid>
+            </UserControl>
+        </Grid>
+    </Grid>
+</Page>

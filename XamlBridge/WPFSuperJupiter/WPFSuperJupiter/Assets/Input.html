@@ -1,0 +1,17 @@
+﻿<!doctype html>
+<html>
+    <script>
+        function OnPageLoad()
+        {
+            document.getElementById('firstname').focus()
+            document.addEventListener('DOMContentLoaded', function ()
+                {
+                    document.getElementById('firstname').focus();
+                });
+        }
+    </script>
+    <body onload='OnPageLoad()'>
+        First name: <input type="text" id="firstname" name="firstname" value=""><br>
+        Last name: <input type="text" id="lastname" name="lastname" value=""><br>
+    </body>
+</html>

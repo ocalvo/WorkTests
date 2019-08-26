@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.944s">To talk with your friends online, start a party.</p>
+      <p region="speaker" begin="3.944s" end="8.607s">Double-tap the Xbox button, go down to Parties,</p>
+      <p region="speaker" begin="8.607s" end="11.736s">and choose Start a party.</p>
+      <p region="speaker" begin="11.736s" end="14.530s">Right away you’re in a party of one.</p>
+      <p region="speaker" begin="14.530s" end="18.035s">The crown by your gamertag shows you’re the party leader.</p>
+      <p region="speaker" begin="18.035s" end="20.188s">Friends can now see in their Friends list</p>
+      <p region="speaker" begin="20.188s" end="23.084s">that you’re in a party, and can join you.</p>
+      <p region="speaker" begin="23.084s" end="25.207s">If you don’t want to allow others to join</p>
+      <p region="speaker" begin="25.207s" end="26.863s">without an invitation from you,</p>
+      <p region="speaker" begin="26.863s" end="30.022s">select Make the party invite-only.</p>
+      <p region="speaker" begin="30.022s" end="32.663s">The current setting is shown up at the top.</p>
+      <p region="speaker" begin="32.663s" end="35.640s">Also at the top there’s an icon that shows what microphone</p>
+      <p region="speaker" begin="35.640s" end="39.927s">your Xbox is using for chat, a headset or Kinect.</p>
+      <p region="speaker" begin="39.927s" end="43.594s">Choose Invite more to invite your friends.</p>
+      <p region="speaker" begin="43.594s" end="50.370s">Select who to invite, and then Send invite.</p>
+      <p region="speaker" begin="50.370s" end="53.919s">After your friends join the party, you can chat,</p>
+      <p region="speaker" begin="53.919s" end="56.530s">even if you’re all doing different things.</p>
+      <p region="speaker" begin="56.530s" end="59.760s">If you’re playing a multiplayer game when you start a party,</p>
+      <p region="speaker" begin="59.760s" end="62.432s">you can invite your friends right into game.</p>
+      <p region="speaker" begin="62.432s" end="66.567s">Just choose Invite to game before you send the invite.</p>
+      <p region="speaker" begin="66.567s" end="70.376s">Anyone can mute themselves or other people in the party,</p>
+      <p region="speaker" begin="70.376s" end="73.201s">and can send invites to their friends to join.</p>
+      <p region="speaker" begin="73.201s" end="76.594s">But only the party leader can remove people from the party.</p>
+      <p region="speaker" begin="76.594s" end="79.712s">When you get an invite to a party,</p>
+      <p region="speaker" begin="79.712s" end="83.126s">it pops up as a notification. To join right away,</p>
+      <p region="speaker" begin="83.126s" end="86.651s">press and hold the Xbox button on your controller briefly.</p>
+      <p region="speaker" begin="86.651s" end="88.804s">If you don’t join right away,</p>
+      <p region="speaker" begin="88.804s" end="94.361s">check your notifications for the invite.</p>
+      <p region="speaker" begin="94.361s" end="100.731s">Or look at your Friends list to see who’s in a party.</p>
+      <p region="speaker" begin="100.731s" end="106.816s">Select their gamertag to see who else is in the party, and to join.</p>
+      <p region="speaker" begin="106.816s" end="113.470s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

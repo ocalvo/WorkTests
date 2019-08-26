@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.SuperJupiterHomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel VerticalAlignment="Center" x:Name="optionsPanel">
+                <Button x:Name="Animations" Content="Animations Menu" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="AM"/>
+                <Button x:Name="AutoFocusTraps" Content="Autofocus traps" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="AT"/>
+                <Button x:Name="BindingTest" Content="BindingTest" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="BT"/>
+                <Button x:Name="ButtonBase" Content="ButtonBase" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="BB"/>
+                <Button x:Name="CaptureElement" Content="CaptureElement" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CE"/>
+                <Button x:Name="CalendarPicker" Content="Calendar" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CP"/>
+                <Button x:Name="ComboBox" Content="ComboBox" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CB"/>
+                <Button x:Name="CommandBar" Content="CommandBar" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CA"/>
+                <Button x:Name="ComponentUI" Content="ComponentUI" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CU"/>
+                <Button x:Name="ContentDialog" Content="Content Dialog" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="CD"/>
+                <Button x:Name="DateTimePicker" Content="Date/Time Picker" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="DTP"/>
+                <Button x:Name="Flip" Content="FlipView" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="FI"/>
+                <Button x:Name="Flyouts" Content="Flyouts" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="FY"/>
+                <Button x:Name="FocusEngagement" Content="Focus Engagement" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="FE"/>
+                <Button x:Name="FocusedElementRemoved" Content="FocusedElementRemoved Event" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="FER"/>
+                <Button x:Name="Hub" Content="Hub" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="H"/>
+                <Button x:Name="Image" Content="Image" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="I"/>
+                <Button x:Name="KeyTips" Content="Key Tips" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="KT"/>
+                <Button x:Name="ListViewBase" Content="ListView/GridView" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="LVB"/>
+                <Button x:Name="Maps"  Content="Maps" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="MA"/>
+                <Button x:Name="Media" Content="MediaElement" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="ME"/>
+				<Button x:Name="MediaPlayer" Content="MediaPlayerElement" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="MPE"/>
+                <Button x:Name="MessageDialog" Content="Message Dialog" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="MD"/>
+                <Button x:Name="Pivot" Content="Pivot" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="PI"/>
+                <Button x:Name="PopupBase" Content="Popup Occlusivity" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="PB"/>
+                <Button x:Name="Progress" Content="Progress Controls" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="PR"/>
+                <Button x:Name="RelativeLayout" Content="RelativePanel" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="RL"/>
+                <Button x:Name="ScrollViewer"  Content="Scroll Viewer" HorizontalContentAlignment="Left" HorizontalAlignment="Center" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="SV"/>
+                <Button x:Name="SemanticZoom"  Content="Semantic Zoom" HorizontalContentAlignment="Left" HorizontalAlignment="Center" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="SZ"/>
+                <Button x:Name="Split" Content="SplitView" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="SP"/>
+                <Button x:Name="SwapChainPanel"  Content="SwapChainPanel (Unavailable)" IsEnabled="False" HorizontalAlignment="Center" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="SCP"/>
+                <Button x:Name="Text" Content="Text" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="TX"/>
+                <Button x:Name="TextBox" Content="TextBox" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="TB"/>
+                <Button x:Name="Tooltip" Content="Tooltip" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="TT"/>
+                <Button x:Name="Web" Content="WebView" HorizontalAlignment="Center" HorizontalContentAlignment="Left" Width="400" Margin="0,5" Click="navigateToControl" AccessKey="WE"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

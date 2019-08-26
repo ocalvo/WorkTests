@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD33AE00-A6F9-461D-9957-2980CD1C67E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WPFSuperJupiter</RootNamespace>
+    <AssemblyName>WPFSuperJupiter</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.UI.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>..\..\..\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Interop\XamlApplication.cs" />
+    <Compile Include="Interop\XamlBridge.cs" />
+    <Compile Include="SuperJupiterViews\AddDeleteView.g.cs" />
+    <Compile Include="SuperJupiterViews\AddDeleteView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\AddDeleteView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\AnimationsView.g.cs" />
+    <Compile Include="SuperJupiterViews\AnimationsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\AnimationsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\AutoFocusTrapsView.g.cs" />
+    <Compile Include="SuperJupiterViews\AutoFocusTrapsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\AutoFocusTrapsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\BindingTestView.g.cs" />
+    <Compile Include="SuperJupiterViews\BindingTestView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\BindingTestView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ButtonBaseView.g.cs" />
+    <Compile Include="SuperJupiterViews\ButtonBaseView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ButtonBaseView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\CalendarPickerView.g.cs" />
+    <Compile Include="SuperJupiterViews\CalendarPickerView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\CalendarPickerView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\CaptureElementView.g.cs" />
+    <Compile Include="SuperJupiterViews\CaptureElementView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\CaptureElementView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ColorDoublePointAnimationView.g.cs" />
+    <Compile Include="SuperJupiterViews\ColorDoublePointAnimationView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ColorDoublePointAnimationView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ComboBoxView.g.cs" />
+    <Compile Include="SuperJupiterViews\ComboBoxView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ComboBoxView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\CommandBarView.g.cs" />
+    <Compile Include="SuperJupiterViews\CommandBarView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\CommandBarView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ContentDialogView.g.cs" />
+    <Compile Include="SuperJupiterViews\ContentDialogView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ContentDialogView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ContentThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\ContentThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ContentThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ContinuumNavTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\ContinuumNavTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ContinuumNavTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ControlAnimationsView.g.cs" />
+    <Compile Include="SuperJupiterViews\ControlAnimationsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ControlAnimationsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\DateTimePickerView.g.cs" />
+    <Compile Include="SuperJupiterViews\DateTimePickerView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\DateTimePickerView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\EasingFunctionsView.g.cs" />
+    <Compile Include="SuperJupiterViews\EasingFunctionsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\EasingFunctionsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\EdgeUITransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\EdgeUITransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\EdgeUITransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\EntranceThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\EntranceThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\EntranceThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\FlipView.g.cs" />
+    <Compile Include="SuperJupiterViews\FlipView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\FlipView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\FlyoutsView.g.cs" />
+    <Compile Include="SuperJupiterViews\FlyoutsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\FlyoutsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\FocusedElementRemovedView.g.cs" />
+    <Compile Include="SuperJupiterViews\FocusedElementRemovedView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\FocusedElementRemovedView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\FocusEngagementView.g.cs" />
+    <Compile Include="SuperJupiterViews\FocusEngagementView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\FocusEngagementView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\FromToByAnimationsView.g.cs" />
+    <Compile Include="SuperJupiterViews\FromToByAnimationsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\FromToByAnimationsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\GeneratorIncrementalLoadingClass.cs" />
+    <Compile Include="SuperJupiterViews\HubView.g.cs" />
+    <Compile Include="SuperJupiterViews\HubView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\HubView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ImageView.g.cs" />
+    <Compile Include="SuperJupiterViews\ImageView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ImageView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\IncrementalLoadingBase.cs" />
+    <Compile Include="SuperJupiterViews\KeyFramesAnimationView.g.cs" />
+    <Compile Include="SuperJupiterViews\KeyFramesAnimationView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\KeyFramesAnimationView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\KeyTipsView.g.cs" />
+    <Compile Include="SuperJupiterViews\KeyTipsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\KeyTipsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ListViewBaseView.g.cs" />
+    <Compile Include="SuperJupiterViews\ListViewBaseView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ListViewBaseView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\MainPage.g.cs" />
+    <Compile Include="SuperJupiterViews\MainPage.g.i.cs" />
+    <Compile Include="SuperJupiterViews\MainPage.xaml.cs" />
+    <Compile Include="SuperJupiterViews\MapsView.g.cs" />
+    <Compile Include="SuperJupiterViews\MapsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\MapsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\MediaPlayerView.g.cs" />
+    <Compile Include="SuperJupiterViews\MediaPlayerView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\MediaPlayerView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\MediaView.g.cs" />
+    <Compile Include="SuperJupiterViews\MediaView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\MediaView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\MessageDialogView.g.cs" />
+    <Compile Include="SuperJupiterViews\MessageDialogView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\MessageDialogView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\PaneThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\PaneThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\PaneThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\PivotView.g.cs" />
+    <Compile Include="SuperJupiterViews\PivotView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\PivotView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\PopupThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\PopupThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\PopupThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\PopupView.g.cs" />
+    <Compile Include="SuperJupiterViews\PopupView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\PopupView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ProgressView.g.cs" />
+    <Compile Include="SuperJupiterViews\ProgressView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ProgressView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\RelativeLayoutView.g.cs" />
+    <Compile Include="SuperJupiterViews\RelativeLayoutView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\RelativeLayoutView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ReorderThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\ReorderThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ReorderThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\RepositionThemeTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\RepositionThemeTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\RepositionThemeTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\SampleListItems.cs" />
+    <Compile Include="SuperJupiterViews\ScrollViewerView.g.cs" />
+    <Compile Include="SuperJupiterViews\ScrollViewerView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ScrollViewerView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\SemanticZoomView.g.cs" />
+    <Compile Include="SuperJupiterViews\SemanticZoomView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\SemanticZoomView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\SlideNavTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\SlideNavTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\SlideNavTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\SplitView.g.cs" />
+    <Compile Include="SuperJupiterViews\SplitView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\SplitView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\SuperJupiterHomeView.g.cs" />
+    <Compile Include="SuperJupiterViews\SuperJupiterHomeView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\SuperJupiterHomeView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TestUserControl.g.cs" />
+    <Compile Include="SuperJupiterViews\TestUserControl.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TestUserControl.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TextBoxView.g.cs" />
+    <Compile Include="SuperJupiterViews\TextBoxView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TextBoxView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TextView.g.cs" />
+    <Compile Include="SuperJupiterViews\TextView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TextView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\ThemeAnimationsView.g.cs" />
+    <Compile Include="SuperJupiterViews\ThemeAnimationsView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\ThemeAnimationsView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TooltipView.g.cs" />
+    <Compile Include="SuperJupiterViews\TooltipView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TooltipView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileFeatheringNavTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileFeatheringNavTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileFeatheringNavTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileNavTransitionView.g.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileNavTransitionView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\TurnstileNavTransitionView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\WebView.g.cs" />
+    <Compile Include="SuperJupiterViews\WebView.g.i.cs" />
+    <Compile Include="SuperJupiterViews\WebView.xaml.cs" />
+    <Compile Include="SuperJupiterViews\XamlTypeInfo.g.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interop\CoreWindowInterop.cs" />
+    <Compile Include="Interop\ICoreImmersiveApplication4.cs" />
+    <Compile Include="Interop\ICoreWindowInterop.cs" />
+    <Compile Include="Interop\IInspectable.cs" />
+    <Compile Include="Interop\InterfacePointer.cs" />
+    <Compile Include="Interop\JupiterHost.cs" />
+    <Compile Include="Interop\Win32Interop.cs" />
+    <Compile Include="Interop\WinRTInterop.cs" />
+    <Compile Include="Interop\XamlPresenter.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Assets\jellies.srt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="globalresources.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SuperJupiterViews\AddDeleteView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\AnimationsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\AutoFocusTrapsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\BindingTestView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ButtonBaseView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\CalendarPickerView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\CaptureElementView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ColorDoublePointAnimationView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ComboBoxView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\CommandBarView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ContentDialogView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ContentThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ContinuumNavTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ControlAnimationsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\DateTimePickerView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\EasingFunctionsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\EdgeUITransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\EntranceThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\FlipView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\FlyoutsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\FocusedElementRemovedView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\FocusEngagementView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\FromToByAnimationsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\HubView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ImageView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\KeyFramesAnimationView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\KeyTipsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ListViewBaseView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\MainPage.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\MapsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\MediaPlayerView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\MediaView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\MessageDialogView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\PaneThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\PivotView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\PopupThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\PopupView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ProgressView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\RelativeLayoutView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ReorderThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\RepositionThemeTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ScrollViewerView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\SemanticZoomView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\SlideNavTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\SplitView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\SuperJupiterHomeView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TestUserControl.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TextBoxView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TextView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\ThemeAnimationsView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TooltipView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TurnstileFeatheringNavTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\TurnstileNavTransitionView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SuperJupiterViews\WebView.xbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Input.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\jellies.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\morainelake.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SmallLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SplashScreen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\StoreLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

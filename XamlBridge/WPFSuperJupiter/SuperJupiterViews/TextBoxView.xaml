@@ -1,0 +1,163 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.TextBoxView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Textbox1: "  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="ContentText" Width="250" PlaceholderText="This is placeholder text" VerticalAlignment="Top" Foreground="Red"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="T1 Output: " Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray" Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Text, ElementName=ContentText}" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray"/>
+            </StackPanel>
+
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Textbox1: "  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="ContentText2" Width="250" Text="This text is bound to output" VerticalAlignment="Top"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="T2 Output: " Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray" Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Text, ElementName=ContentText2}" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray"/>
+            </StackPanel>
+
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Number scope: " Width="80" TextWrapping="Wrap"  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="inputScopeBox" Width="250" VerticalAlignment="Center" InputScope="Number"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Japan scope: " Width="80" TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="inputScopeBox2" Width="250" VerticalAlignment="Center" InputScope="Hiragana"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Chat scope: " Width="80" TextWrapping="Wrap"  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="inputScopeBox3" Width="250" VerticalAlignment="Center" InputScope="Chat"/>
+            </StackPanel>
+ 
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="ChatWithoutEmoji scope: " Width="80" TextWrapping="Wrap"  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="inputScopeBox4" Width="250" VerticalAlignment="Center" InputScope="ChatWithoutEmoji"/>
+            </StackPanel>
+            
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="SpellCheck: "  Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox TextWrapping="Wrap" AcceptsReturn="True"  IsSpellCheckEnabled="True" Width="250" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock TextWrapping="Wrap" Text="Text Prediction on: " Width="80" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox TextWrapping="Wrap" AcceptsReturn="True" IsTextPredictionEnabled="True"  Width="250" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <TextBlock TextWrapping="Wrap" Text="Text Prediction off: " Width="80" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox TextWrapping="Wrap" AcceptsReturn="True" IsTextPredictionEnabled="False"  Width="250" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            </StackPanel>
+
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+
+            <TextBlock Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,10" Text="RichEditBox:"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical">
+                    <Button Click="BoldButtonClick" IsTabStop="False" Content="Bold" Margin="3,0" Width="100"/>
+                    <Button Click="ItalicButtonClick" IsTabStop="False" Content="Italic" Margin="3,0" Width="100"/>
+                    <Grid x:Name="fontColorGrid">
+                        <Button x:Name="fontColorButton"  Click="FontColorButtonClick" IsTabStop="False" LostFocus="FontColorButtonLostFocus" Content="Font Color"  AllowFocusOnInteraction="False" Width="100" Margin="3,0"/>
+                        <Popup x:Name="fontColorPopup" IsOpen="False">
+                            <Border BorderBrush="Gray" BorderThickness="2" Background="White">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button x:Name="black" Click="ColorButtonClick"  AllowFocusOnInteraction="False">
+                                        <Button.Content>
+                                            <Rectangle Fill="Black" Width="50" Height="25"/>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button x:Name="gray" Click="ColorButtonClick" Grid.Row="1"  AllowFocusOnInteraction="False">
+                                        <Button.Content>
+                                            <Rectangle Fill="Gray" Width="50" Height="25"/>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button x:Name="darkgreen" Click="ColorButtonClick" Grid.Column="1"  AllowFocusOnInteraction="False">
+                                        <Button.Content>
+                                            <Rectangle Fill="DarkGreen" Width="50" Height="25"/>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button x:Name="green" Click="ColorButtonClick" Grid.Row="1" Grid.Column="1"  AllowFocusOnInteraction="False">
+                                        <Button.Content>
+                                            <Rectangle Fill="Green" Width="50" Height="25"/>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button x:Name="blue" Click="ColorButtonClick" Grid.Column="2"  AllowFocusOnInteraction="False">
+                                        <Button.Content>
+                                            <Rectangle Fill="Blue" Width="50" Height="25"/>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button Click="ColorButtonClick" Grid.Row="2" Grid.Column="2"  AllowFocusOnInteraction="False">Close</Button>
+                                </Grid>
+                            </Border>
+                        </Popup>
+                    </Grid>
+                </StackPanel>
+                <TextBlock Style="{StaticResource BasicTextStyle}"  Text="Find:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox x:Name="findBox" Width="200" Height="20" TextChanged="FindBoxTextChanged" GotFocus="FindBoxGotFocus" LostFocus="FindBoxLostFocus" Margin="3,0"/>
+            </StackPanel>
+            <RichEditBox x:Name="editor" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="100" Width="350" HorizontalAlignment="Center" />
+
+            <Border BorderBrush="LightGray" BorderThickness="0.5" Width="300" Margin="0,10"/>
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0" Text="PasswordBox:"/>
+                <PasswordBox x:Name="passwordBox" Width="200" Height="30" HorizontalAlignment="Right" PasswordChar="*" Password="Binded password..."/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="Password: " Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray" Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Password, ElementName=passwordBox}" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Margin="0,0,5,0" Text="PasswordBox:"/>
+                <PasswordBox x:Name="passwordBoxNumericPin" InputScope="NumericPin" Width="200" Height="30" HorizontalAlignment="Right" PasswordChar="*" Password="Binded password..."/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,10">
+                <TextBlock Text="PasswordNumericPin: " Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray" Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Password, ElementName=passwordBoxNumericPin}" Style="{StaticResource BasicTextStyle}" VerticalAlignment="Center" Foreground="LightGray"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="0,10">
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+	            <TextBlock Text="Text Events:"/>
+                    <TextBox x:Name="textEventsTB" Width="300" TextChanged="textEventsTB_TextChanged" TextChanging="textEventsTB_TextChanging" TextCompositionStarted="textEventsTB_TextCompositionStarted" TextCompositionChanged="textEventsTB_TextCompositionChanged" TextCompositionEnded="textEventsTB_TextCompositionEnded"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <ScrollViewer x:Name="textEventsLoggingScrollViewer" Width="300" Height="200" HorizontalAlignment="Left">
+                <TextBlock x:Name="textEventsLoggingTB"/>
+            </ScrollViewer>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

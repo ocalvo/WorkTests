@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.KeyFramesAnimationView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="ColorAnimation Using Keyframes" Grid.Row="0" Grid.Column="0" FontSize="12" TextAlignment="Center" Margin="10" Width="100" TextWrapping="Wrap"/>
+        <Rectangle x:Name="colorAnimationTargetRect" Width="100" Height="100" Fill="Red" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Rectangle.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimationUsingKeyFrames EnableDependentAnimation="true"
+                                                          Storyboard.TargetName="colorAnimationTargetRect"
+                                                          Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)"
+                                                          Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever">
+                                <DiscreteColorKeyFrame KeyTime="0:0:0.5" Value="Red" />
+                                <DiscreteColorKeyFrame KeyTime="0:0:1" Value="Orange" />
+                                <DiscreteColorKeyFrame KeyTime="0:0:2" Value="Blue" />
+                                <EasingColorKeyFrame KeyTime="0:0:3" Value="Yellow" />
+                            </ColorAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <TextBlock Text="DoubleAnimation Using Keyframes" Grid.Row="0" Grid.Column="1" FontSize="12" TextAlignment="Center" Margin="10" Width="100" TextWrapping="Wrap"/>
+        <Canvas Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="100">
+            <Rectangle x:Name="doubleAnimationTargetRect" Width="100" Height="100" Fill="Green" Canvas.Left="0" Canvas.Top="0">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="Rectangle.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="doubleAnimationTargetRect"
+                                                               Storyboard.TargetProperty="(Canvas.Top)"
+                                                               Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever">
+                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0.5" Value="50" />
+                                    <DiscreteDoubleKeyFrame KeyTime="0:0:1" Value="100" />
+                                    <DiscreteDoubleKeyFrame KeyTime="0:0:2" Value="150" />
+                                    <EasingDoubleKeyFrame KeyTime="0:0:3" Value="200" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+        </Canvas>
+
+        <TextBlock Text="PointAnimation Using Keyframes" Grid.Row="0" Grid.Column="2" FontSize="12" TextAlignment="Center" Margin="10" Width="100" TextWrapping="Wrap"/>
+        <Canvas Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Width="100">
+            <Path Fill="Blue">
+                <Path.Data>
+                    <EllipseGeometry x:Name="pointAnimationTargetEllipse" Center="50,50" RadiusX="50" RadiusY="50" />
+                </Path.Data>
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="Path.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <PointAnimationUsingKeyFrames Storyboard.TargetName="pointAnimationTargetEllipse"
+                                                              Storyboard.TargetProperty="Center"
+                                                              Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever" EnableDependentAnimation="True">
+                                    <DiscretePointKeyFrame KeyTime="0:0:0.5" Value="50,75" />
+                                    <DiscretePointKeyFrame KeyTime="0:0:1" Value="50,100" />
+                                    <DiscretePointKeyFrame KeyTime="0:0:2" Value="50,150" />
+                                    <EasingPointKeyFrame KeyTime="0:0:3" Value="50,200" />
+                                </PointAnimationUsingKeyFrames>
+                            </Storyboard>                            
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Path.Triggers>
+            </Path>
+        </Canvas>
+    </Grid>
+</Page>

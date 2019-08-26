@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="5.374s">The OneGuide hub and app give you shortcuts to movies and TV.</p>
+      <p region="speaker" begin="5.374s" end="9.123s">If you’ve browsed in any of the categories in OneGuide recently,</p>
+      <p region="speaker" begin="9.123s" end="12.932s">you’ll see the OneGuide app in the Most Recently Used list.</p>
+      <p region="speaker" begin="12.932s" end="16.224s">Right from here you can jump straight to watching TV,</p>
+      <p region="speaker" begin="16.224s" end="20.988s">browsing the TV listings, or browsing all your video apps together.</p>
+      <p region="speaker" begin="20.988s" end="25.996s">When you start the OneGuide app, it opens to last category you browsed.</p>
+      <p region="speaker" begin="25.996s" end="28.607s">You can quickly switch to another by pressing</p>
+      <p region="speaker" begin="28.607s" end="32.569s">the Menu button on your controller and choosing one from the menu.</p>
+      <p region="speaker" begin="32.569s" end="41.468s">The menu also gives you quick access to TV listings, trending, and favorites.</p>
+      <p region="speaker" begin="41.468s" end="44.668s">To get a quick overview of lots of shows at once,</p>
+      <p region="speaker" begin="44.668s" end="47.187s">go to OneGuide on Home.</p>
+      <p region="speaker" begin="47.187s" end="51.353s">At the top is featured content from video apps that you can jump into,</p>
+      <p region="speaker" begin="51.353s" end="55.782s">and if you have TV configured you’ll see the top trending shows right here.</p>
+      <p region="speaker" begin="55.782s" end="60.607s">Below that are the categories for browsing, and the movies and TV</p>
+      <p region="speaker" begin="60.607s" end="63.431s">you’ve purchased for your own collection.</p>
+      <p region="speaker" begin="63.431s" end="67.718s">Continue on down to see selections from across your video apps,</p>
+      <p region="speaker" begin="67.718s" end="72.676s">so you don’t have to start each app individually to find something to watch.</p>
+      <p region="speaker" begin="72.676s" end="77.603s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.ListViewBaseView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.Resources>
+                <CollectionViewSource x:Name="ItemsList"/>
+            </Grid.Resources>
+            
+            <ListView Grid.Column="1" Margin="20" Width="300" ItemsSource="{Binding Source={StaticResource ItemsList}}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource BaseTextBlockStyle}" Text="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+            <GridView Grid.Row="1" Grid.Column="1" Margin="40,0,0,0" SelectionMode="Multiple">
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid MaximumRowsOrColumns="2"/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <Button Height="100" Width="100" Background="LightBlue" Content="A"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="B"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="C"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="D"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="E"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="F"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="G"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="H"/>
+                <Button Height="100" Width="100" Background="LightBlue" Content="I"/>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.959s">Prepaid codes are 25-character codes</p>
+      <p region="speaker" begin="2.959s" end="6.901s">that you can redeem for games, Xbox Live Gold subscriptions, and</p>
+      <p region="speaker" begin="6.901s" end="11.655s">other things on your Xbox One or on the web at Xbox.com.</p>
+      <p region="speaker" begin="11.655s" end="14.936s">On your Xbox, go to the Games store.</p>
+      <p region="speaker" begin="14.936s" end="17.811s">Right on the front page, select Use a code,</p>
+      <p region="speaker" begin="17.811s" end="23.398s">and then follow the instructions.</p>
+      <p region="speaker" begin="23.398s" end="26.446s">On the web, go to Xbox.com and sign in</p>
+      <p region="speaker" begin="26.446s" end="31.089s">using the Microsoft account you use for your Xbox profile.</p>
+      <p region="speaker" begin="31.089s" end="33.649s">Click your gamertag at the top,</p>
+      <p region="speaker" begin="33.649s" end="38.373s">and then choose Redeem code.</p>
+      <p region="speaker" begin="38.373s" end="44.996s">Click Redeem, type in your code,</p>
+      <p region="speaker" begin="44.996s" end="47.973s">and click Confirm.</p>
+      <p region="speaker" begin="47.973s" end="51.853s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

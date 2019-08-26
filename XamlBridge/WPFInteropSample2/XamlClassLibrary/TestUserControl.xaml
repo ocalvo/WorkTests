@@ -1,0 +1,27 @@
+﻿<UserControl
+    x:Class="XamlClassLibrary.TestUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlClassLibrary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Hello, world - from WUX inside WPF!" HorizontalAlignment="Center" />
+        <TextBox Text="WUX TextBox" />
+        <ToggleSwitch />
+        <TextBlock Text="hello, world 1234" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Content="WUX Button" Style="{StaticResource ButtonRevealStyle}" Width="200" Margin="0,0,5,0" />
+            <Button Content="WUX Button" Style="{StaticResource ButtonRevealStyle}" Width="200" Margin="5,0,5,0" />
+            <Button Content="WUX Button" Style="{StaticResource ButtonRevealStyle}" Width="200" Margin="5,0,0,0" />
+        </StackPanel>
+        <MediaPlayerElement Width="300" AutoPlay="True" x:Name="mediaplayerelement" AreTransportControlsEnabled="True" />
+        <Border BorderBrush="Blue" BorderThickness="1">
+            <InkCanvas Height="300" HorizontalAlignment="Stretch" x:Name="inkcanvas" />
+        </Border>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.664s">Choose whether to hear party chat on your</p>
+      <p region="speaker" begin="2.664s" end="5.854s">headset, your speakers, or both.</p>
+      <p region="speaker" begin="5.854s" end="10.334s">Open the guide and go to Settings &gt; All settings.</p>
+      <p region="speaker" begin="10.334s" end="14.520s">In Display &amp; sound,</p>
+      <p region="speaker" begin="14.520s" end="16.846s">choose Volume.</p>
+      <p region="speaker" begin="16.846s" end="20.249s">Select Party chat output</p>
+      <p region="speaker" begin="20.249s" end="25.755s">and choose the option you prefer.</p>
+      <p region="speaker" begin="25.755s" end="30.814s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

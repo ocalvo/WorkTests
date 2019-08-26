@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <!--<style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="80% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />-->
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="0% 0%" tts:extent="100% 5%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.477s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="3.477s" end="6.992s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="6.992s" end="11.675s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="11.675s" end="14.672s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="14.672s" end="19.040s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="19.040s" end="22.281s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="22.281s" end="26.842s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="26.842s" end="31.972s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="31.972s" end="36.524s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="36.524s" end="40.130s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="40.130s" end="45.727s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+      <p region="speaker" begin="48.623s" end="52.514s">0x00, 0x01234567890ABCDEF, 0x01, 0x01234567890ABCDEF, 0x02, 0x01234567890ABCDEF, 0x03, 0x01234567890ABCDEF</p>
+    </div>
+  </body>
+</tt>

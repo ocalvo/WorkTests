@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="00:00:00:00" end="00:00:03:88">Here are five tips to help you do things quickly.</p>
+      <p region="speaker" begin="00:00:03:88" end="00:00:09:95">One: Anywhere you are, open the guide by double-tapping the Xbox button on your controller.</p>
+      <p region="speaker" begin="00:00:09:95" end="00:00:14:25">Even while you’re playing you can send party invites and messages.</p>
+      <p region="speaker" begin="00:00:14:25" end="00:00:18:89">Two: From Home, jump straight down to your games and apps collection and pins</p>
+      <p region="speaker" begin="00:00:18:89" end="00:00:20:88">by pressing the right trigger.</p>
+      <p region="speaker" begin="00:00:20:88" end="00:00:25:71">Jump back up with the left trigger.</p>
+      <p region="speaker" begin="00:00:25:71" end="00:00:30:24">Three: If you’re playing a backward compatible Xbox 360 game,</p>
+      <p region="speaker" begin="00:00:30:24" end="00:00:35:74">open the 360 guide by pressing the Menu button and View button at the same time.</p>
+      <p region="speaker" begin="00:00:35:74" end="00:00:40:46">Four: Quickly capture a screenshot of your game,</p>
+      <p region="speaker" begin="00:00:40:46" end="00:00:42:48">or the last thirty seconds of game play,</p>
+      <p region="speaker" begin="00:00:42:48" end="00:00:47:83">by double-tapping the Xbox button and then pressing Y or X.</p>
+      <p region="speaker" begin="00:00:47:83" end="00:00:53:12">Five: If you have an app snapped, switch between it and your game</p>
+      <p region="speaker" begin="00:00:53:12" end="00:00:55:76">by double-tapping the Xbox button.</p>
+      <p region="speaker" begin="00:00:55:76" end="00:00:58:21">The guide opens with Unsnap highlighted.</p>
+      <p region="speaker" begin="00:00:58:21" end="00:01:01:57">Move right once and press A to switch to your game,</p>
+      <p region="speaker" begin="00:01:01.57" end="00:01:05.12">or twice and press “A” to switch to your snapped app.</p>
+      <p region="speaker" begin="00:01:05.12" end="00:01:12.03">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.421s">Customize your Home screen by choosing</p>
+      <p region="speaker" begin="2.421s" end="5.062s">a background color or image.</p>
+      <p region="speaker" begin="5.062s" end="9.898s">In Settings,</p>
+      <p region="speaker" begin="9.898s" end="15.393s">go to Personalization &gt; My color and background.</p>
+      <p region="speaker" begin="15.393s" end="18.553s">Choose My background.</p>
+      <p region="speaker" begin="18.553s" end="25.430s">To use a solid color, select it here.</p>
+      <p region="speaker" begin="25.430s" end="29.006s">Or use a picture by choosing one of these three options.</p>
+      <p region="speaker" begin="29.006s" end="33.161s">Select Achievement art to use the image from an achievement.</p>
+      <p region="speaker" begin="33.161s" end="41.126s">Choose a game, and then the achievement.</p>
+      <p region="speaker" begin="41.126s" end="48.714s">Select Set as background.</p>
+      <p region="speaker" begin="48.714s" end="51.914s">Custom image is any picture you have on a USB drive</p>
+      <p region="speaker" begin="51.914s" end="54.098s">plugged into your Xbox.</p>
+      <p region="speaker" begin="54.098s" end="57.207s">You’ll need the Media Player app to use this.</p>
+      <p region="speaker" begin="57.207s" end="61.931s">If you don’t have the app, you’ll be prompted to go to the store to install it.</p>
+      <p region="speaker" begin="61.931s" end="64.216s">In the Media Player app,</p>
+      <p region="speaker" begin="64.216s" end="72.313s">browse to the pictures on your USB drive.</p>
+      <p region="speaker" begin="72.313s" end="74.731s">Select the one you want,</p>
+      <p region="speaker" begin="74.731s" end="78.012s">then press the Menu button on your controller</p>
+      <p region="speaker" begin="78.012s" end="84.117s">and choose Set as background.</p>
+      <p region="speaker" begin="84.117s" end="88.973s">Choose Screenshot to get to the screenshots you’ve taken.</p>
+      <p region="speaker" begin="88.973s" end="92.387s">Highlight one, press the Menu button,</p>
+      <p region="speaker" begin="92.387s" end="100.300s">and then Set as background.</p>
+      <p region="speaker" begin="100.300s" end="105.573s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

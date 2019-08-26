@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.ColorDoublePointAnimationView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="ColorAnimation" Grid.Row="0" Grid.Column="0" FontSize="12" HorizontalAlignment="Center" Margin="10"/>
+        <Rectangle x:Name="colorAnimationTargetRect" Width="100" Height="100" Fill="Red" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Rectangle.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation
+                                        EnableDependentAnimation="true"
+                                        Storyboard.TargetName="colorAnimationTargetRect"
+                                        Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)"
+                                        To="Yellow" Duration="0:0:2" AutoReverse="True" RepeatBehavior="Forever" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <TextBlock Text="DoubleAnimation" Grid.Row="0" Grid.Column="1" FontSize="12" HorizontalAlignment="Center" Margin="10"/>
+        <Canvas Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="100">
+            <Rectangle x:Name="doubleAnimationTargetRect" Width="100" Height="100" Fill="Green" Canvas.Left="0" Canvas.Top="0">
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="Rectangle.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="doubleAnimationTargetRect"
+                                                         Storyboard.TargetProperty="(Canvas.Top)"
+                                                         To="100" Duration="0:0:2" AutoReverse="True" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+        </Canvas>
+
+        <TextBlock Text="PointAnimation" Grid.Row="0" Grid.Column="2" FontSize="12" HorizontalAlignment="Center" Margin="10"/>
+        <Canvas Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Width="100">
+            <Path Fill="Blue">
+                <Path.Data>
+                    <EllipseGeometry x:Name="pointAnimationTargetEllipse" Center="50,50" RadiusX="50" RadiusY="50" />
+                </Path.Data>
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="Path.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <PointAnimation Storyboard.TargetProperty="Center"
+                                                Storyboard.TargetName="pointAnimationTargetEllipse"
+                                                Duration="0:0:2" From="50,50" To="50,100" RepeatBehavior="Forever"
+                                                AutoReverse="True" EnableDependentAnimation="True" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Path.Triggers>
+            </Path>
+        </Canvas>
+    </Grid>
+</Page>

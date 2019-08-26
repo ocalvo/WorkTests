@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="00:00:00:00" end="00:00:05:48">OneGuide is your single destination for TV, movies, and video apps.</p>
+      <p region="speaker" begin="00:00:05:48" end="00:00:13:48">Browse for movies</p>
+      <p region="speaker" begin="00:00:13:48" end="00:00:17:98">and TV shows available in video apps.</p>
+      <p region="speaker" begin="00:00:17:98" end="00:00:21:03">Or go to the ones you’ve purchased in your own library.</p>
+      <p region="speaker" begin="00:00:21:03" end="00:00:24:10">Use search if you know just what you want.</p>
+      <p region="speaker" begin="00:00:24:10" end="00:00:29:14">App channels show you the latest movies, TV shows, and videos</p>
+      <p region="speaker" begin="00:00:29:14" end="00:00:32:61">available through your video apps.</p>
+      <p region="speaker" begin="00:00:32:61" end="00:00:41:30">Select the star by your favorites to keep them at the top of the list.</p>
+      <p region="speaker" begin="00:00:41:30" end="00:00:47:98">See a list of trending live TV shows from across the Xbox Live community.</p>
+      <p region="speaker" begin="00:00:47:98" end="00:00:53:96">TV listings come up instantly and in full screen.</p>
+      <p region="speaker" begin="00:00:53:96" end="00:00:58:25">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

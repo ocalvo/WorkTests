@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="5.679s">OneGuide on Xbox One gives you lots of ways to find shows you want to watch.</p>
+      <p region="speaker" begin="5.679s" end="9.630s">If OneGuide is one of your Most Recently Used apps on Home,</p>
+      <p region="speaker" begin="9.630s" end="13.013s">launch TV directly to the last channel you watched</p>
+      <p region="speaker" begin="13.013s" end="16.660s">or open the listings and see what’s on.</p>
+      <p region="speaker" begin="16.660s" end="18.956s">Get some help picking a show by pressing the Menu button</p>
+      <p region="speaker" begin="18.956s" end="21.912s">on your controller to open the OneGuide menu.</p>
+      <p region="speaker" begin="21.912s" end="26.636s">The menu gives you quick access to TV listings, trending, and favorites.</p>
+      <p region="speaker" begin="26.636s" end="30.466s">Trending lists the most popular shows being watched right now,</p>
+      <p region="speaker" begin="30.466s" end="33.412s">and also what’s trending based on Twitter activity.</p>
+      <p region="speaker" begin="33.412s" end="36.561s">Press the Menu button and choose Favorites to see</p>
+      <p region="speaker" begin="36.561s" end="39.731s">just the channels you’ve marked as favorites.</p>
+      <p region="speaker" begin="39.731s" end="44.587s">Add to Favorites by selecting the star by the channel name in the listings.</p>
+      <p region="speaker" begin="44.587s" end="49.910s">While you’re watching, you can still press the Menu button</p>
+      <p region="speaker" begin="49.910s" end="51.810s">to open the menu for browsing.</p>
+      <p region="speaker" begin="51.810s" end="56.777s">Or press X to jump back to where you were last in OneGuide.</p>
+      <p region="speaker" begin="56.777s" end="63.462s">Press up or down on your controller’s D-pad to open the Miniguide.</p>
+      <p region="speaker" begin="63.462s" end="67.149s">The Miniguide shows you what’s on the other channels.</p>
+      <p region="speaker" begin="67.149s" end="72.107s">Move right for details on a show, and move left to filter the channel list.</p>
+      <p region="speaker" begin="72.107s" end="77.542s">The top filter is All Channels. Below that is your most recent channels.</p>
+      <p region="speaker" begin="77.542s" end="81.666s">And below that is just the channels you’ve marked as favorites.</p>
+      <p region="speaker" begin="81.666s" end="86.502s">If you have Kinect, use voice commands to watch TV,</p>
+      <p region="speaker" begin="86.502s" end="90.555s">snap TV, or watch a specific channel by name.</p>
+      <p region="speaker" begin="90.555s" end="96.193s">If the OneGuide app isn’t your Most Recently Used list,</p>
+      <p region="speaker" begin="96.193s" end="99.180s">get started by going to the OneGuide hub.</p>
+      <p region="speaker" begin="99.180s" end="102.695s">Here you can jump into the top trending TV shows,</p>
+      <p region="speaker" begin="102.695s" end="106.179s">or launch TV to your most recent channel.</p>
+      <p region="speaker" begin="106.179s" end="109.999s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

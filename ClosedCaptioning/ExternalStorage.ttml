@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="5.415s">Get more storage space for games and apps by adding external hard drives.</p>
+      <p region="speaker" begin="5.415s" end="12.038s">Plug a USB 3.0 drive into your Xbox One. Your Xbox will format the drive</p>
+      <p region="speaker" begin="12.038s" end="14.050s">erasing anything that’s on it</p>
+      <p region="speaker" begin="14.050s" end="17.402s">and start using it as additional storage space.</p>
+      <p region="speaker" begin="17.402s" end="21.831s">The drive has to be at least 256 gigabytes to work.</p>
+      <p region="speaker" begin="21.831s" end="25.549s">Plug a second drive in and your Xbox will use that too.</p>
+      <p region="speaker" begin="25.549s" end="33.361s">You can use a USB hub to connect both drives to the same port, as long as it’s a USB 3.0 hub.</p>
+      <p region="speaker" begin="33.361s" end="36.368s">Two is the maximum at one time,</p>
+      <p region="speaker" begin="36.368s" end="39.467s">but you can switch out as many drives as you want.</p>
+      <p region="speaker" begin="39.467s" end="43.205s">To move or copy a game or app from one drive to another,</p>
+      <p region="speaker" begin="43.205s" end="46.994s">highlight it, press the Menu button on your controller,</p>
+      <p region="speaker" begin="46.994s" end="53.039s">and choose Manage game, or Manage app for apps.</p>
+      <p region="speaker" begin="53.039s" end="57.184s">Open the drop-down menu and choose move or copy.</p>
+      <p region="speaker" begin="57.184s" end="61.064s">Any add-ons you have will also come with it.</p>
+      <p region="speaker" begin="61.064s" end="65.849s">A list of storage devices is at the top of your games and apps collection,</p>
+      <p region="speaker" begin="65.849s" end="69.567s">so you can always check what’s on each drive.</p>
+      <p region="speaker" begin="69.567s" end="73.194s">That’s handy when you want to take your games to a friend’s house.</p>
+      <p region="speaker" begin="73.194s" end="76.099s">Bring the drive, plug it into their Xbox One,</p>
+      <p region="speaker" begin="76.099s" end="79.828s">and you can play without having to install or download anything.</p>
+      <p region="speaker" begin="79.828s" end="83.810s">You do have to be signed into Xbox Live with your own profile.</p>
+      <p region="speaker" begin="83.810s" end="86.288s">And if you got the game on disc instead of digital,</p>
+      <p region="speaker" begin="86.288s" end="89.224s">you’ll still need to insert the disc to play.</p>
+      <p region="speaker" begin="89.224s" end="93.217s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

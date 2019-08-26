@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.HubView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+         <Hub SectionHeaderClick="Hub_SectionHeaderClick">
+            <Hub.Header>
+                <Grid Margin="0,20,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>      
+                    <TextBlock x:Name="pageTitle" Text="Hub Header" Grid.Column="1" 
+                       IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Top"/>
+                </Grid>
+            </Hub.Header>
+            <HubSection Header="Section 1" Width="900" Background="Red">
+                <DataTemplate>
+                    <StackPanel>
+                        <Button Content="Populate other hub sections"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="Section 2" Background="Blue">
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock x:Name="hubSection2" Text="Here is some simple and plain text for purposes of showing it" TextWrapping="Wrap"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Name="interactiveHeader" Header="Interactive header" IsHeaderInteractive="True" Background="Green">
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Disabled Button" IsEnabled="False"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                        <Button Content="Placeholder"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="5.232s">On your home Xbox, anyone who signs in can play your downloaded games.</p>
+      <p region="speaker" begin="5.232s" end="9.620s">And if you have an Xbox Live Gold subscription, they'll share the benefits, too.</p>
+      <p region="speaker" begin="9.620s" end="14.446s">The first time you sign in on an Xbox One, if you choose No barriers</p>
+      <p region="speaker" begin="14.446s" end="18.408s">it saves your password and that console becomes your home Xbox.</p>
+      <p region="speaker" begin="18.408s" end="23.629s">If you were at a friend’s house when you first did that, their Xbox became your home Xbox.</p>
+      <p region="speaker" begin="23.629s" end="27.418s">But you can still change your home Xbox to your own console.</p>
+      <p region="speaker" begin="27.418s" end="35.901s">On the console you want as your home Xbox, go to Settings &gt; All settings</p>
+      <p region="speaker" begin="35.901s" end="41.976s">Personalization &gt; My home Xbox.</p>
+      <p region="speaker" begin="41.976s" end="47.045s">If this console isn’t currently your home Xbox, the description explains the benefits.</p>
+      <p region="speaker" begin="47.045s" end="50.631s">Press A to make the console your home Xbox.</p>
+      <p region="speaker" begin="50.631s" end="54.908s">If it already is, it says so right here.</p>
+      <p region="speaker" begin="54.908s" end="58.982s">Pressing A removes that console as your home Xbox.</p>
+      <p region="speaker" begin="58.982s" end="63.320s">You can have only one console as your home Xbox at a time,</p>
+      <p region="speaker" begin="63.320s" end="66.479s">but you can change it up to three times a year.</p>
+      <p region="speaker" begin="66.479s" end="70.857s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

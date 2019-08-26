@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="7.142s">Pin games, apps, movies, and music to Home so you can find them quickly.</p>
+      <p region="speaker" begin="7.142s" end="12.014s">To pin something, highlight it and press the Menu button on your controller.</p>
+      <p region="speaker" begin="12.014s" end="17.388s">Then select Pin to Home.</p>
+      <p region="speaker" begin="17.388s" end="21.187s">Your pins are below your most recently used items on Home.</p>
+      <p region="speaker" begin="21.187s" end="24.580s">Jump right to them by pressing the right trigger.</p>
+      <p region="speaker" begin="24.580s" end="30.046s">To remove a pin, press the Menu button and then Unpin.</p>
+      <p region="speaker" begin="30.046s" end="35.481s">Or send a pin to the front of the line by choosing Move to front.</p>
+      <p region="speaker" begin="35.481s" end="40.144s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

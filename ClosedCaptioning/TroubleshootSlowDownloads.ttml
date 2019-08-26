@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="5.699s">Here are a few tips to try if an app or game download seems unusually slow.</p>
+      <p region="speaker" begin="5.699s" end="9.763s">First, check your download speed to see what it actually is.</p>
+      <p region="speaker" begin="9.763s" end="13.531s">Start a download so you have full bandwidth usage, and then</p>
+      <p region="speaker" begin="13.531s" end="26.392s">go to Settings . . . Network settings . . . Bandwidth usage.</p>
+      <p region="speaker" begin="26.392s" end="31.106s">Look at Current usage. This shows your network speed.</p>
+      <p region="speaker" begin="31.106s" end="35.769s">If it seems lower than you expect, try doing a full reboot of your console.</p>
+      <p region="speaker" begin="35.769s" end="40.147s">The reboot closes open games and apps in the background</p>
+      <p region="speaker" begin="40.147s" end="43.327s">and starts a new connection to the network.</p>
+      <p region="speaker" begin="43.327s" end="49.981s">Your download in progress is suspended during the reboot,</p>
+      <p region="speaker" begin="49.981s" end="54.634s">and then resumes where it left off.</p>
+      <p region="speaker" begin="54.634s" end="56.340s">Check that the installation is continuing by</p>
+      <p region="speaker" begin="56.340s" end="60.018s">going to My games and apps . . . and checking the Queue.</p>
+      <p region="speaker" begin="60.018s" end="63.015s">When it shows Installing…, check your network bandwidth usage</p>
+      <p region="speaker" begin="63.015s" end="70.146s">to see if it’s gone up. If not, try canceling the download completely and starting again.</p>
+      <p region="speaker" begin="70.146s" end="73.824s">It’s possible a corrupted file was interfering with the download.</p>
+      <p region="speaker" begin="73.824s" end="77.034s">Canceling removes the corrupted file.</p>
+      <p region="speaker" begin="77.034s" end="80.579s">Highlight the game or app . . .  press the Menu button on your controller . . .</p>
+      <p region="speaker" begin="80.579s" end="82.367s">and choose Cancel.</p>
+      <p region="speaker" begin="82.367s" end="87.081s">Then start the installation again.</p>
+      <p region="speaker" begin="87.081s" end="90.322s">For more details and troubleshooting options to try,</p>
+      <p region="speaker" begin="90.322s" end="93.156s">go to support.xbox.com.</p>
+      <p region="speaker" begin="93.156s" end="98.174s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

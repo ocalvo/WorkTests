@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.294s">Game clips are videos of your gaming highlights.</p>
+      <p region="speaker" begin="3.294s" end="6.647s">Your clips can be up to five minutes long.</p>
+      <p region="speaker" begin="6.647s" end="10.375s">A quick way to capture a thirty-second clip any time you’re playing a game</p>
+      <p region="speaker" begin="10.375s" end="16.237s">is to double-tap the Xbox button, and then press X.</p>
+      <p region="speaker" begin="16.237s" end="21.478s">This captures the last thirty seconds as a clip that you can save or edit later.</p>
+      <p region="speaker" begin="21.478s" end="28.559s">To watch your clips, open the Game DVR app.</p>
+      <p region="speaker" begin="28.559s" end="36.859s">Keep your favorites by pressing the Menu button on your controller, then Save.</p>
+      <p region="speaker" begin="36.859s" end="40.384s">Clips you don’t save are deleted automatically after a while.</p>
+      <p region="speaker" begin="40.384s" end="44.153s">Snap the Game DVR to make longer recordings.</p>
+      <p region="speaker" begin="44.153s" end="46.997s">Double-tap the Xbox button,</p>
+      <p region="speaker" begin="46.997s" end="49.517s">go down to Snap an app,</p>
+      <p region="speaker" begin="49.517s" end="53.824s">and choose Game DVR.</p>
+      <p region="speaker" begin="53.824s" end="55.947s">You can capture clips after something happens,</p>
+      <p region="speaker" begin="55.947s" end="58.903s">or start recording before you do something.</p>
+      <p region="speaker" begin="58.903s" end="67.681s">To capture after, double-tap the Xbox button. Move right and select Game DVR.</p>
+      <p region="speaker" begin="67.681s" end="73.369s">Then choose End clip now and decide how far back you want the clip to start,</p>
+      <p region="speaker" begin="73.369s" end="75.736s">up to five minutes ago.</p>
+      <p region="speaker" begin="75.736s" end="83.853s">To start recording first, choose Start new clip, then Start recording.</p>
+      <p region="speaker" begin="83.853s" end="89.857s">To stop, double-tap the Xbox button again, switch to Game DVR,</p>
+      <p region="speaker" begin="89.857s" end="94.164s">then Stop Recording.</p>
+      <p region="speaker" begin="94.164s" end="100.341s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.586s">Choose a gamerpic that represents you.</p>
+      <p region="speaker" begin="3.586s" end="7.152s">Open the guide and go up to your gamerpic.</p>
+      <p region="speaker" begin="7.152s" end="15.126s">Under Sign in, highlight your gamerpic and press A.</p>
+      <p region="speaker" begin="15.126s" end="18.489s">Then select My Profile.</p>
+      <p region="speaker" begin="18.489s" end="24.107s">Choose Customize profile...</p>
+      <p region="speaker" begin="24.107s" end="27.662s">Change gamerpic,</p>
+      <p region="speaker" begin="27.662s" end="33.697s">And choose one from the gallery.</p>
+      <p region="speaker" begin="33.697s" end="42.210s">Or, choose Switch to avatar to use your customizable, animated avatar instead.</p>
+      <p region="speaker" begin="42.210s" end="51.251s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="00:00:00:00" end="00:00:06:98">With backward compatibility, you can play many of your Xbox 360 games on your Xbox One.</p>
+      <p region="speaker" begin="00:00:06:98" end="00:00:11:47">If you own a digital copy of a game in the Backward Compatible game catalog,</p>
+      <p region="speaker" begin="00:00:11:47" end="00:00:16:79">it shows up automatically in the Ready to Install section on your Xbox One.</p>
+      <p region="speaker" begin="00:00:16:79" end="00:00:20:36">You can also play backward-compatible games you own on disc.</p>
+      <p region="speaker" begin="00:00:20:36" end="00:00:24:52">Insert the disc and follow the prompt to install the game.</p>
+      <p region="speaker" begin="00:00:24:52" end="00:00:28:09">The console begins downloading the game to your hard drive.</p>
+      <p region="speaker" begin="00:00:28:09" end="00:00:30:37">After the game has finished installing,</p>
+      <p region="speaker" begin="00:00:30:37" end="00:00:33:87">keep the game disc in the drive to play.</p>
+      <p region="speaker" begin="00:00:33:87" end="00:00:38:32">You’ll see the Xbox 360 Start animation take over the screen,</p>
+      <p region="speaker" begin="00:00:38:32" end="00:00:42:70">but it’s still running inside the Xbox One so you can use both guides.</p>
+      <p region="speaker" begin="00:00:42:70" end="00:00:45:04">I’ll show some of that in a bit.</p>
+      <p region="speaker" begin="00:00:45:04" end="00:00:49:64">If you have a game save stored in the cloud, it’ll sync your save</p>
+      <p region="speaker" begin="00:00:49:64" end="00:00:52:29">and you can pick up where you left off.</p>
+      <p region="speaker" begin="00:00:52:29" end="00:00:55:49">When you're playing, save your game often.</p>
+      <p region="speaker" begin="00:00:55:49" end="00:01:01:51">If you open a full-screen Xbox One app or game, you'll lose your unsaved progress.</p>
+      <p region="speaker" begin="00:01:01:51" end="00:01:06:63">While playing an Xbox 360 game, you can send messages and join parties</p>
+      <p region="speaker" begin="00:01:06:63" end="00:01:12:74">with other Xbox 360 players by pressing the Menu and View buttons on your controller at the same time</p>
+      <p region="speaker" begin="00:01:12:74" end="00:01:14:63">to open the guide.</p>
+      <p region="speaker" begin="00:01:14:63" end="00:01:20:96">And, since you’re playing on Xbox One, you can record game video clips and take screenshots.</p>
+      <p region="speaker" begin="00:01:20:96" end="00:01:23:42">Double-tap the Xbox button,</p>
+      <p region="speaker" begin="00:01:23:42" end="00:01:26:33">and choose an option to capture your game.</p>
+      <p region="speaker" begin="00:01:26:33" end="00:01:30.60">The same double-tap opens the guide on your Xbox One,</p>
+      <p region="speaker" begin="00:01:30:60" end="00:01:34:64">where you can check notifications and send messages to your Xbox One friends.</p>
+      <p region="speaker" begin="00:01:34:64" end="00:01:40:87">Find a list of games in the backward compatible catalog on Xbox.com.</p>
+      <p region="speaker" begin="00:01:40:87" end="00:01:48:88">And vote for Xbox 360 games you want to play using the Xbox Feedback website.</p>
+      <p region="speaker" begin="00:01:48:88" end="00:01:53:87">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

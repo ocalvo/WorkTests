@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.238s">Want to clear some space?</p>
+      <p region="speaker" begin="2.238s" end="5.346s">Uninstall apps and games you’re not using.</p>
+      <p region="speaker" begin="5.346s" end="8.678s">Go to My games and apps.</p>
+      <p region="speaker" begin="8.678s" end="11.462s">You can see how much space is available on your Xbox.</p>
+      <p region="speaker" begin="11.462s" end="13.524s">Highlight a game or app,</p>
+      <p region="speaker" begin="13.524s" end="16.013s">press the Menu button on your controller,</p>
+      <p region="speaker" begin="16.013s" end="20.452s">and choose Manage game, or Manage app for apps.</p>
+      <p region="speaker" begin="20.452s" end="24.841s">To delete an individual item, highlight it,</p>
+      <p region="speaker" begin="24.841s" end="26.578s">press the Menu button,</p>
+      <p region="speaker" begin="26.578s" end="28.336s">and then Uninstall.</p>
+      <p region="speaker" begin="28.336s" end="32.318s">To uninstall everything, including add-ons and saved data,</p>
+      <p region="speaker" begin="32.318s" end="36.737s">select Manage all, then Uninstall all.</p>
+      <p region="speaker" begin="36.737s" end="39.846s">After you uninstall something,</p>
+      <p region="speaker" begin="39.846s" end="43.462s">you can still find the tile in your collection by scrolling right.</p>
+      <p region="speaker" begin="43.462s" end="45.423s">That way it’s easy to reinstall</p>
+      <p region="speaker" begin="45.423s" end="48.247s">if you want to use them again later.</p>
+      <p region="speaker" begin="48.247s" end="53.052s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.AutoFocusTrapsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="Black">
+        
+        <Grid RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
+            <Button Content="Bottom Left" Width="100" Height="70"></Button>
+        </Grid>
+        
+        <Grid RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            <Button Content="Bottom Right" Width="100" Height="70"></Button>
+        </Grid>
+        
+        <Grid RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
+            <Button Content="Top Left" Width="100" Height="70"></Button>
+        </Grid>
+        
+        <Grid RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            <Button Content="Top Right" Width="100" Height="70"></Button>
+        </Grid>
+        
+        <Grid RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
+            <Button Content="Center" Width="100" Height="70"></Button>
+        </Grid>
+
+    </RelativePanel>
+</Page>

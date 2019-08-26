@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.ScrollViewerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+  <StackPanel>
+     <ToggleSwitch OnContent="TS" 
+                          OffContent="No TS"
+                          x:Name="tsIsTabStop" 
+                          Toggled="Options_Changed" />
+            
+            <ToggleSwitch OnContent="ER"
+                          OffContent="No ER"
+                          x:Name="tsIsEngEnabled" 
+                          Toggled="Options_Changed"/>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="400"></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition Width="400"></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+
+      <Button Content="Top" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+      <Button Content="Left" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Bottom" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Right" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Top Left" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Top Right" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Bottom Left" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+      <Button Content="Bottom Right" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+      <ScrollViewer
+          x:Name='sv'
+          Width='400'
+          Height='400'
+          HorizontalScrollMode='Enabled'
+          VerticalScrollMode='Enabled'
+          Grid.Row="1" Grid.Column="1"
+          ZoomMode="Enabled"
+          UseSystemFocusVisuals="True"
+          HorizontalScrollBarVisibility='Auto'>
+
+        <Canvas Width='600' Height='600' HorizontalAlignment="Left" VerticalAlignment="Top">
+          <Button Canvas.Top='0' Canvas.Left='0' Click="On_CanvasButtonClicked">1</Button>
+          <Button Canvas.Top='200' Canvas.Left='0' Click="On_CanvasButtonClicked">2</Button>
+          <Button Canvas.Top='500' Canvas.Left='0' Click="On_CanvasButtonClicked">3</Button>
+          <Button Canvas.Top='0' Canvas.Left='200' Click="On_CanvasButtonClicked">5</Button>
+          <Button Canvas.Top='0' Canvas.Left='500' Click="On_CanvasButtonClicked">6</Button>
+        </Canvas>
+      </ScrollViewer>
+    </Grid>
+  </StackPanel>
+</Page>

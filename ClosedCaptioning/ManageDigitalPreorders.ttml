@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="4.165s">You can pre-order certain Xbox One games through the Xbox Store</p>
+      <p region="speaker" begin="4.165s" end="7.416s">and install the digital version before the release date.</p>
+      <p region="speaker" begin="7.416s" end="11.195s">Browse or search the Xbox Store to find the game you want.</p>
+      <p region="speaker" begin="11.195s" end="15.858s">On the game’s details page, select Pre-order if it's available.</p>
+      <p region="speaker" begin="15.858s" end="23.020s">After you buy the game, it's installed if the game is ready,</p>
+      <p region="speaker" begin="23.020s" end="27.012s">or else it’s added to your download queue until closer to the release day.</p>
+      <p region="speaker" begin="27.012s" end="29.603s">You’re charged at the time of pre-order.</p>
+      <p region="speaker" begin="29.603s" end="33.524s">If you want to cancel before the release date, contact Xbox Support.</p>
+      <p region="speaker" begin="33.524s" end="40.066s">Go to support.xbox.com/contact-us for information.</p>
+      <p region="speaker" begin="40.066s" end="43.672s">You’ll be able to start playing the game as soon as it’s released in your region,</p>
+      <p region="speaker" begin="43.672s" end="47.340s">usually at 12:00 A.M. local time on the release date.</p>
+      <p region="speaker" begin="47.340s" end="51.982s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

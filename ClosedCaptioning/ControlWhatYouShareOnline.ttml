@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="4.737s">Your Xbox puts you in control of the information other people can see about you,</p>
+      <p region="speaker" begin="4.737s" end="8.719s">including who can see your profile, your game and app history,</p>
+      <p region="speaker" begin="8.719s" end="11.848s">your online status, and more.</p>
+      <p region="speaker" begin="11.848s" end="18.218s">Go to Settings . . . All settings.</p>
+      <p region="speaker" begin="18.218s" end="26.548s">Under Account . . . choose Privacy &amp; online safety.</p>
+      <p region="speaker" begin="26.548s" end="28.884s">Choose a template that’s appropriate for you.</p>
+      <p region="speaker" begin="28.884s" end="33.232s">Then select View details &amp; customize.</p>
+      <p region="speaker" begin="33.232s" end="37.184s">Read about each option and decide how you want to set it.</p>
+      <p region="speaker" begin="37.184s" end="40.739s">For most options, you choose who is allowed to see your activities</p>
+      <p region="speaker" begin="40.739s" end="43.604s">and profile information on Xbox Live–</p>
+      <p region="speaker" begin="43.604s" end="49.628s">Everybody, just your Xbox Live Friends, or nobody.</p>
+      <p region="speaker" begin="49.628s" end="54.911s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

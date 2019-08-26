@@ -1,0 +1,40 @@
+﻿<UserControl
+    x:Class="MediaTestManaged.MyUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaTestManaged"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    HorizontalAlignment="Left"
+    VerticalAlignment="Top"
+    mc:Ignorable="d"
+    Background="Aqua"
+    Width="200" Height="200">
+    <UserControl.RenderTransform>
+        <CompositeTransform x:Name="scaleTransform" ScaleX="1.0" ScaleY="1.0"/>
+    </UserControl.RenderTransform>
+
+
+            <StackPanel Background="Aqua">
+                <Button
+                x:Name="btn"
+                AccessKey="H">Start(Hello from Component)</Button>
+                <Canvas
+                AccessKey="C"
+                IsAccessKeyScope="true"
+                Background="Red"
+                Width="196" Height="196"
+                x:Name="componentCanvas"
+                Visibility="Collapsed"
+                AutomationProperties.Name="ComponentCanvas"/>
+
+            <ListView AccessKey="L" IsAccessKeyScope="true" x:Name='itemList'>
+                    <ListViewItem AccessKey="1">Item 1</ListViewItem>
+                    <ListViewItem AccessKey="2">Item 2</ListViewItem>
+                    <ListViewItem AccessKey="3">Item 3</ListViewItem>
+                    <ListViewItem AccessKey="4">Item 4</ListViewItem>
+                    <ListViewItem AccessKey="5">Item 5</ListViewItem>
+                    <ListViewItem AccessKey="6">Item 6</ListViewItem>
+                </ListView>
+            </StackPanel>
+</UserControl>

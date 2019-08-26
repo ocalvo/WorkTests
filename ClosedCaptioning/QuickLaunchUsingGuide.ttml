@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.132s">Instantly see your friends list, party invites,</p>
+      <p region="speaker" begin="3.132s" end="5.631s">messages, and achievements in the guide.</p>
+      <p region="speaker" begin="5.631s" end="8.465s">From Home, move left to open the guide.</p>
+      <p region="speaker" begin="8.465s" end="10.842s">See who’s online and who’s in a party,</p>
+      <p region="speaker" begin="10.842s" end="14.042s">and join up or send your own invite.</p>
+      <p region="speaker" begin="14.042s" end="19.437s">Below Friends is Parties, where you can manage</p>
+      <p region="speaker" begin="19.437s" end="25.349s">your current party or invite friends to a new one.</p>
+      <p region="speaker" begin="25.349s" end="28.132s">Down one more is Achievements. While you’re playing</p>
+      <p region="speaker" begin="28.132s" end="31.729s">a game, double-tap the Xbox button to open the guide.</p>
+      <p region="speaker" begin="31.729s" end="35.051s">Move down to Achievements to see your progress</p>
+      <p region="speaker" begin="35.051s" end="38.433s">and what you need to do for more Gamerscore.</p>
+      <p region="speaker" begin="38.433s" end="42.578s">Next is Messages. Read recently received messages,</p>
+      <p region="speaker" begin="42.578s" end="46.733s">or send messages using text or a voice recording.</p>
+      <p region="speaker" begin="46.733s" end="50.126s">Check Notifications for the things you may have missed, like</p>
+      <p region="speaker" begin="50.126s" end="54.210s">party invites, new friend requests, and recent achievements.</p>
+      <p region="speaker" begin="54.210s" end="57.735s">Below that, you can get to all the Settings for your Xbox One.</p>
+      <p region="speaker" begin="57.735s" end="60.854s">Kinect mic and power settings are right in the guide,</p>
+      <p region="speaker" begin="60.854s" end="64.267s">and for everything else, choose All settings.</p>
+      <p region="speaker" begin="64.267s" end="68.290s">And last on the guide is Snap, where you can launch snappable apps.</p>
+      <p region="speaker" begin="68.290s" end="71.114s">When you’re done, press B to close the guide</p>
+      <p region="speaker" begin="71.114s" end="75.259s">and get back to your game.</p>
+      <p region="speaker" begin="75.259s" end="79.272s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

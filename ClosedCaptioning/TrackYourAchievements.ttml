@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="2.766s">See what achievements you’re getting close to and</p>
+      <p region="speaker" begin="2.766s" end="5.418s">what you need to do next in the guide.</p>
+      <p region="speaker" begin="5.418s" end="8.607s">While you’re playing a game, double-tap the Xbox button.</p>
+      <p region="speaker" begin="8.607s" end="11.533s">In the guide, go down to Achievements.</p>
+      <p region="speaker" begin="11.533s" end="15.658s">The achievements you’re closest to are at the top of the list.</p>
+      <p region="speaker" begin="15.658s" end="18.502s">Highlight one to see more details.</p>
+      <p region="speaker" begin="18.502s" end="24.110s">You can also see a list of achievements you’ve already unlocked.</p>
+      <p region="speaker" begin="24.110s" end="31.089s">If you want to see all your achievements and the gamerscore leaderboard,</p>
+      <p region="speaker" begin="31.089s" end="35.528s">select See my achievements.</p>
+      <p region="speaker" begin="35.528s" end="41.186s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

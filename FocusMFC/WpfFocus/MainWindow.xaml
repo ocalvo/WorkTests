@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfFocus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFocus"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <Grid>
+        <DockPanel>
+            <Menu IsMainMenu="True" DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Tools">
+                    <MenuItem Header="_Manage users">
+                        <MenuItem.Icon>
+                            <Image Source="/WpfTutorialSamples;component/Images/user.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+        <Button
+            Name="bt1"
+            HorizontalAlignment="Left"
+            Margin="62,32,0,0"
+            VerticalAlignment="Top" Width="75">
+            <AccessText>Button_1</AccessText>
+        </Button>
+        <local:HostingControl
+            x:Name="host1"
+            HorizontalAlignment="Left"
+            Margin="62,100,0,0"
+            VerticalAlignment="Top" Width="75">
+            <AccessText>Button_2</AccessText>
+        </local:HostingControl>
+        <Button
+            Name="bt3"
+            Content="Button3"
+            HorizontalAlignment="Left"
+            Margin="62,167,0,0"
+            VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

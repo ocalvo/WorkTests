@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="AKTester.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AKTester"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="0,30,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="txt"/>
+        <TextBlock x:Name="txt2"/>
+        <AutoSuggestBox x:Name="autoBox" QuerySubmitted="autoBox_QuerySubmitted" QueryIcon="Accept">
+            <AutoSuggestBox.Items>
+                <TextBlock>Seattle</TextBlock>
+                <TextBlock>Costa Rica</TextBlock>
+                <TextBlock>San Jose</TextBlock>
+                <TextBlock>Miami</TextBlock>
+            </AutoSuggestBox.Items>
+        </AutoSuggestBox>
+        <CommandBar x:Name="cmdBar">
+            <AppBarButton x:Name="bt01">app1
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem x:Name="bt01It01">btA</MenuFlyoutItem>
+                        <MenuFlyoutItem x:Name="bt01It02">btB</MenuFlyoutItem>
+                        <MenuFlyoutSubItem x:Name="bt01It03" Text="btC">
+                            <MenuFlyoutItem x:Name="bt01It0301">bt1</MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="bt01It0302">bt2</MenuFlyoutItem>
+                        </MenuFlyoutSubItem>
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+            <AppBarButton x:Name="bt02">app2
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem x:Name="bt02It01">btA</MenuFlyoutItem>
+                        <MenuFlyoutItem x:Name="bt02It02">btB</MenuFlyoutItem>
+                        <MenuFlyoutSubItem IsTapEnabled="true" x:Name="bt02It03" Text="btC">
+                            <MenuFlyoutItem x:Name="bt02It0301">bt1</MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="bt02It0302">bt2</MenuFlyoutItem>
+                        </MenuFlyoutSubItem>
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+        </CommandBar>
+        <SymbolIcon Symbol="Accept"/>
+        <Button>
+            <SymbolIcon Symbol="Accept"/>
+        </Button>
+        <!--
+        <Pivot x:Name="cmdBar">
+            <PivotItem Header="app1" x:Name="bt01">
+                <StackPanel>
+                    <Button x:Name="bt01It01">btA</Button>
+                    <Button x:Name="bt01It02">btB</Button>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="app2" x:Name="bt02">
+                <StackPanel>
+                    <Button x:Name="bt02It01">btA</Button>
+                    <Button x:Name="bt02It02">btB</Button>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+        -->
+        <TextBox ></TextBox>
+    </StackPanel>
+</Page>

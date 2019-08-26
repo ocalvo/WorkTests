@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="3.637s">The New Xbox One Experience brings together</p>
+      <p region="speaker" begin="3.637s" end="7.223s">the games, friends, and features you use most.</p>
+      <p region="speaker" begin="7.223s" end="11.937s">Sign in by moving left, and selecting your profile.</p>
+      <p region="speaker" begin="11.937s" end="20.866s">Then press “B” to close the sign-in area.</p>
+      <p region="speaker" begin="20.866s" end="25.305s">Front and center is the latest game you played or app you used,</p>
+      <p region="speaker" begin="25.305s" end="26.707s">and as you scroll down</p>
+      <p region="speaker" begin="26.707s" end="29.338s">you’ll see your recently played games and apps,</p>
+      <p region="speaker" begin="29.338s" end="33.107s">and then your games and apps collection and your pins.</p>
+      <p region="speaker" begin="33.107s" end="37.455s">Your recently played games give you links straight to the game hub,</p>
+      <p region="speaker" begin="37.455s" end="41.112s">where you can get updates on the game directly from the game developer</p>
+      <p region="speaker" begin="41.112s" end="43.449s">and the Xbox Live community.</p>
+      <p region="speaker" begin="43.449s" end="46.476s">You can also see which friends are currently playing the game,</p>
+      <p region="speaker" begin="46.476s" end="48.955s">and jump to your game clips and screenshots.</p>
+      <p region="speaker" begin="48.955s" end="51.241s">Here’s a controller shortcut.</p>
+      <p region="speaker" begin="51.241s" end="56.503s">Use your right trigger to jump straight down to your games and apps</p>
+      <p region="speaker" begin="56.503s" end="60.130s">and your left trigger to jump back up.</p>
+      <p region="speaker" begin="60.130s" end="62.944s">Down the left side is the guide.</p>
+      <p region="speaker" begin="62.944s" end="67.414s">Scroll left to open the guide and quickly access your Friends list,</p>
+      <p region="speaker" begin="67.414s" end="70.817s">where you can view their current and recent activity.</p>
+      <p region="speaker" begin="70.817s" end="77.217s">Below Friends is Parties,</p>
+      <p region="speaker" begin="77.217s" end="82.652s">where you can manage your current party or invite friends to a new one.</p>
+      <p region="speaker" begin="82.652s" end="86.614s">The guide also has your messages</p>
+      <p region="speaker" begin="86.614s" end="88.676s">notifications,</p>
+      <p region="speaker" begin="88.676s" end="90.047s">settings,</p>
+      <p region="speaker" begin="90.047s" end="91.703s">and snap.</p>
+      <p region="speaker" begin="91.703s" end="94.812s">Up at the top is the sign-in area,</p>
+      <p region="speaker" begin="94.812s" end="97.108s">where you can get to your Profile</p>
+      <p region="speaker" begin="97.108s" end="99.657s">and find all your achievements.</p>
+      <p region="speaker" begin="99.657s" end="101.090s">Here’s another controller shortcut:</p>
+      <p region="speaker" begin="101.090s" end="104.615s">open the guide from anywhere, even while you’re playing a game,</p>
+      <p region="speaker" begin="104.615s" end="107.226s">by double-tapping the Xbox button.</p>
+      <p region="speaker" begin="107.226s" end="110.385s">That way you don’t have to stop or even minimize your game</p>
+      <p region="speaker" begin="110.385s" end="113.230s">to send party invites and messages.</p>
+      <p region="speaker" begin="113.230s" end="117.110s">To the right of Home is the new Community area.</p>
+      <p region="speaker" begin="117.110s" end="120.330s">Check out your Activity Feed for the latest updates</p>
+      <p region="speaker" begin="120.330s" end="123.439s">and interact with the Xbox Live community by liking,</p>
+      <p region="speaker" begin="123.439s" end="127.188s">commenting on, and sharing your favorite content.</p>
+      <p region="speaker" begin="127.188s" end="131.718s">There’s lot more to discover, like being able to play your Xbox 360 games on your Xbox One,</p>
+      <p region="speaker" begin="131.718s" end="137.671s">and OneGuide, your single destination for browsing TV, movies, and video apps.</p>
+      <p region="speaker" begin="137.671s" end="142.202s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

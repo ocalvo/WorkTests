@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="0.000s" end="4.297s">Play Xbox One games remotely on any Windows 10 PC</p>
+      <p region="speaker" begin="4.297s" end="7.010s">that’s on the same home network.</p>
+      <p region="speaker" begin="7.010s" end="12.231s">To get started, connect an Xbox One controller to your PC with a USB cable.</p>
+      <p region="speaker" begin="12.231s" end="16.478s">Or, if you’ve purchased an Xbox One Adapter for your controller,</p>
+      <p region="speaker" begin="16.478s" end="21.130s">plug it into a USB port on your PC to connect wirelessly.</p>
+      <p region="speaker" begin="21.130s" end="25.305s">Plug your USB headset or microphone into the PC,</p>
+      <p region="speaker" begin="25.305s" end="28.597s">or your chat headset into your controller, before starting,</p>
+      <p region="speaker" begin="28.597s" end="30.883s">if you’re going to use one.</p>
+      <p region="speaker" begin="30.883s" end="37.100s">Your headset has to be set as the default playback and recording device in your PC settings.</p>
+      <p region="speaker" begin="37.100s" end="41.499s">On your PC, start the Xbox app.</p>
+      <p region="speaker" begin="41.499s" end="46.456s">There might be an Xbox One connection option right on the main screen.</p>
+      <p region="speaker" begin="46.456s" end="48.589s">If so, click that.</p>
+      <p region="speaker" begin="48.589s" end="53.476s">Otherwise, click the Connect icon in the navigation bar on the left.</p>
+      <p region="speaker" begin="53.476s" end="58.362s">Your Xbox One shows up in the Add a device list.</p>
+      <p region="speaker" begin="58.362s" end="60.922s">Click it to connect.</p>
+      <p region="speaker" begin="60.922s" end="67.962s">After you’re connected, select “Stream” to start streaming right away</p>
+      <p region="speaker" begin="67.962s" end="72.280s">away and use the controller to move around just like on the Xbox One.</p>
+      <p region="speaker" begin="72.280s" end="81.443s">Or, in the Xbox app, start a game streaming by clicking Play from console.</p>
+      <p region="speaker" begin="81.443s" end="86.614s">To stop streaming, press the Escape button on the keyboard.</p>
+      <p region="speaker" begin="86.614s" end="91.175s">If you’re having trouble connecting to your Xbox, here are some things to check.</p>
+      <p region="speaker" begin="91.175s" end="96.173s">Connect your Xbox One and Windows 10 PC to the same network.</p>
+      <p region="speaker" begin="96.173s" end="101.242s">Sign into both devices with the same Microsoft account.</p>
+      <p region="speaker" begin="101.242s" end="110.070s">On your Xbox One, open the guide and go to All Settings,</p>
+      <p region="speaker" begin="110.070s" end="116.795s">Preferences . . . Game DVR and streaming.</p>
+      <p region="speaker" begin="116.795s" end="122.240s">Make sure Allow game streaming to other devices is checked.</p>
+      <p region="speaker" begin="122.240s" end="124.973s">Go back one level in Settings,</p>
+      <p region="speaker" begin="124.973s" end="128.468s">and select SmartGlass connections.</p>
+      <p region="speaker" begin="128.468s" end="133.202s">Choose an option that allows SmartGlass connections.</p>
+      <p region="speaker" begin="133.202s" end="139.236s">For troubleshooting and performance-improving tips, go to Xbox.com,</p>
+      <p region="speaker" begin="139.236s" end="143.604s">and on the Support menu, choose Xbox on Windows 10.</p>
+      <p region="speaker" begin="143.604s" end="149.090s">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

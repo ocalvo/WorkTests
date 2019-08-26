@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <MediaPlayerElement
+            x:Name="media"
+            AutoPlay="True"
+            AreTransportControlsEnabled="True"
+            Source="https://compass-ssl.microsoft.com/assets/32/e2/32e2e5ff-7505-4a92-8af9-dddc40a76198.mp4?n=CP103_What's-new-in-this-release_en.mp4"/>
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+<Page
+    x:Class="SuperJupiter.Views.FocusedElementRemovedView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="sp">
+            <Button Content="Focus Would have gone here"/>
+            <Button x:Name="deleteMe" Content="Click to delete me" Click="DeleteMe" />
+            <Button x:Name="deleteMeB" Content="Also click to delete me" Click="DeleteMe" />
+        </StackPanel>
+        <StackPanel x:Name="spB" Margin="-10,232,10,-232">
+            <Button x:Name="focusButtonA"  Content="Click to recreate 'delete me'" Click="Recreate" />
+            <Button x:Name="focusButtonB" Content="Click to recreate 'delete me 2'" Click="Recreate" />
+        </StackPanel>
+    </Grid>
+    
+</Page>

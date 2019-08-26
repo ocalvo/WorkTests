@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="SuperJupiter.Views.AnimationsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SuperJupiter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">          
+            <TextBlock Text="Theme Transitions" FontSize="24" Margin="5,5"/>
+            <Button x:Name="AddDelete" Content="Add/Delete Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="ContentThemeTransition" Content="Content Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="EdgeUITransition" Content="Edge UI Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="EntranceThemeTransition" Content="Entrance Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="PaneThemeTransition" Content="Pane Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="PopupThemeTransition" Content="Popup Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="ReorderThemeTransition" Content="Reorder Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="RepositionThemeTransition" Content="Reposition Theme Transitions" Margin="0,5" Width="400" Click="navigateToControl"/>
+            
+            <TextBlock Text="Navigation Transitions" FontSize="24" Margin="5,5"/>
+            <Button x:Name="ContinuumNavTransition" Content="Continuum Navigation Transition" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="SlideNavTransition" Content="Slide Navigation Transition" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="TurnstileFeatheringNavTransition" Content="Turnstile Feathering Navigation Transition" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="TurnstileNavTransition" Content="Turnstile Navigation Transition" Margin="0,5" Width="400" Click="navigateToControl"/>
+            
+            <TextBlock Text="Control and Theme Animations" FontSize="24" Margin="5,5"/>
+            <Button x:Name="ControlAnimations" Content="Control Animations" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="ThemeAnimations" Content="Theme Animations" Margin="0,5" Width="400" Click="navigateToControl"/>
+            
+            <TextBlock Text="Custom Animations" FontSize="24" Margin="5,5"/>
+            <Button x:Name="ColorDoublePointAnimation" Content="Color, Double, Point Animations" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="EasingFunctions" Content="Easing Animations" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="FromToByAnimations" Content="From,To,By Animations" Margin="0,5" Width="400" Click="navigateToControl"/>
+            <Button x:Name="KeyFramesAnimation" Content="Key Frames Animation" Margin="0,5" Width="400" Click="navigateToControl"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>

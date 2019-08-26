@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64</Platforms>
+    <AssetTargetFallback>uap10.0.18362.0</AssetTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Model\Telescope.gltf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI" Version="5.1.1" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Animations" Version="5.1.1" />
+    <PackageReference Include="Microsoft.Toolkit.Win32.UI.XamlApplication" Version="6.0.0-preview6.2" />
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.0.0-preview6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\3dModelComponent\bin\Debug\TelescopeModelComponent.xr.xml" Link="TelescopeModelComponent\TelescopeModelComponent.xr.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\3dModelComponent\bin\Debug\Telescope.xbf" Link="TelescopeModelComponent\Telescope.xbf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Model\Telescope.gltf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\3dModelComponent\TelescopeModelComponent.csproj" />
+  </ItemGroup>
+
+</Project>

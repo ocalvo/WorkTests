@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xml:lang="en" xmlns="http://www.w3.org/ns/ttml">
+  <head>
+    <metadata>
+      <ttm:title />
+      <ttm:desc />
+      <ttm:copyright />
+    </metadata>
+    <styling>
+      <style xml:id="backgroundStyle" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:textAlign="center" tts:origin="10% 80%" tts:extent="90% 10%" tts:backgroundColor="rgba(0,0,0,0)" tts:displayAlign="center" />
+      <style xml:id="speakerStyle" style="backgroundStyle" tts:color="white" tts:textOutline="black 1px" tts:backgroundColor="transparent" />
+    </styling>
+    <layout>
+      <region xml:id="speaker" style="speakerStyle" tts:zIndex="1" />
+      <region xml:id="background" style="backgroundStyle" tts:zIndex="0" />
+    </layout>
+  </head>
+  <body>
+    <div>
+      <p region="speaker" begin="00:00:00:00" end="00:00:07:54">Xbox One has ease of access features like a narrator, magnifier, and closed captioning.</p>
+      <p region="speaker" begin="00:00:07:54" end="00:00:09:75">Here’s how to turn them on.</p>
+      <p region="speaker" begin="00:00:09:75" end="00:00:20:41">Go to Settings . . . “Ease of access”.</p>
+      <p region="speaker" begin="00:00:20:41" end="00:00:25:55">Select an option to turn it on or off, and get information about how it works.</p>
+      <p region="speaker" begin="00:00:25:55" end="00:00:29:86">Narrator reads text on your screen out loud, like this.</p>
+      <p region="speaker" begin="00:00:29:86" end="00:00:35:69">Starting Narrator. Window. Selected: Off, one of two.</p>
+      <p region="speaker" begin="00:00:35:69" end="00:00:38:62">Exiting Narrator.</p>
+      <p region="speaker" begin="00:00:38:62" end="00:00:41:38">You don’t have to go to Settings to turn Narrator on or off.</p>
+      <p region="speaker" begin="00:00:41:38" end="00:00:47:11">Instead, hold the Xbox button until it vibrates, and then press the Menu button.</p>
+      <p region="speaker" begin="00:00:47:11" end="00:00:52:67">Magnifier zooms in to part of the screen.</p>
+      <p region="speaker" begin="00:00:52:67" end="00:00:56:09">The controller shortcut is similar to Narrator</p>
+      <p region="speaker" begin="00:00:56:09" end="00:01:00:86">hold the Xbox button, but then press the View button.</p>
+      <p region="speaker" begin="00:01:00:86" end="00:01:14:46">Zoom in further with the right trigger, and exit by pressing B.</p>
+      <p region="speaker" begin="00:01:14:46" end="00:01:19:84">Closed captioning gives you option to turn video captions on or off,</p>
+      <p region="speaker" begin="00:01:19:84" end="00:01:22:88">and to create a custom caption style.</p>
+      <p region="speaker" begin="00:01:22:88" end="00:01:29:33">High contrast changes default color and highlighting</p>
+      <p region="speaker" begin="00:01:29:33" end="00:01:32:90">to make text easier to read against its background.</p>
+      <p region="speaker" begin="00:01:32:90" end="00:01:36:94">And Button Mapping opens the Xbox Accessories app,</p>
+      <p region="speaker" begin="00:01:36:94" end="00:01:42:96">where you can remap the controller buttons to make the most important ones easier to use.</p>
+      <p region="speaker" begin="00:01:42:96" end="00:01:48:45">Select Configure, then choose Button mapping.</p>
+      <p region="speaker" begin="00:01:48:45" end="00:01:51:92">For example, say I don’t want to push the right bumper</p>
+      <p region="speaker" begin="00:01:51:92" end="00:01:54:56">for some game where I have to use it a lot.</p>
+      <p region="speaker" begin="00:01:54:56" end="00:01:58:29">Instead, I want to press X to get the same action.</p>
+      <p region="speaker" begin="00:01:58:29" end="00:02:01:80">Choose X as the button to remap,</p>
+      <p region="speaker" begin="00:02:01:80" end="00:02:04:94">and Right bumper as the current mapping.</p>
+      <p region="speaker" begin="00:02:04:94" end="00:02:10:78">Notice on the image it shows that right bumper is now mapped to X.</p>
+      <p region="speaker" begin="00:02:10:78" end="00:02:16:44">Discover more! Get information and tips from Xbox Help.</p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="WebViewTester.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebViewTester"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    RequestedTheme="Dark"
+    mc:Ignorable="d">
+    <StackPanel Background="Blue" HorizontalAlignment="Center">
+        <Button Click="OnCreate" x:Name="bt1">Create</Button>
+        <Grid x:Name="root"/>
+        <Button Click="OnDelete" x:Name="bt2">Delete</Button>
+    </StackPanel>
+</Page>
