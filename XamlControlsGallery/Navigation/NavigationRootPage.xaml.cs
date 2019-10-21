@@ -92,7 +92,7 @@ namespace AppUIBasics
             Gamepad.GamepadAdded += OnGamepadAdded;
             Gamepad.GamepadRemoved += OnGamepadRemoved;
 
-            Window.Current.SetTitleBar(AppTitleBar);
+            //Window.Current.SetTitleBar(AppTitleBar);
 
             CoreApplication.GetCurrentView().TitleBar.LayoutMetricsChanged += (s, e) => UpdateAppTitle(s);
 

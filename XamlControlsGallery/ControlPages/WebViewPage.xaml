@@ -30,7 +30,8 @@
                     <Hyperlink NavigateUri="https://go.microsoft.com/fwlink/p/?LinkId=722922">Full Sample</Hyperlink>
                 in the Documentation section for a complete sample.
                 </TextBlock>
-                <WebView Source="https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/web-view" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" />
+                <!-- <WebView Source="https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/web-view" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" />
+                -->
             </Grid>
         </local:ControlExample.Example>
         <local:ControlExample.Xaml>

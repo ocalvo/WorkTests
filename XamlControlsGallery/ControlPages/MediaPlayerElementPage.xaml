@@ -6,8 +6,10 @@
     <StackPanel>
         <local:ControlExample x:Name="Example1" HeaderText="A MediaPlayerElement with transport controls.">
             <local:ControlExample.Example>
+                <!-- 
                 <MediaPlayerElement Source="ms-appx:///Assets/SampleMedia/ladybug.wmv" MaxWidth="400" AutoPlay="False"
                         AreTransportControlsEnabled="True" />
+                -->
             </local:ControlExample.Example>
             <local:ControlExample.Xaml>
                 <x:String xml:space="preserve">
@@ -20,7 +22,7 @@
         </local:ControlExample>
         <local:ControlExample x:Name="Example2" HeaderText="A MediaPlayerElement that autoplays the video.">
             <local:ControlExample.Example>
-                <MediaElement Source="ms-appx:///Assets/SampleMedia/fishes.wmv" MaxWidth="400" AutoPlay="True" />
+                <!--<MediaElement Source="ms-appx:///Assets/SampleMedia/fishes.wmv" MaxWidth="400" AutoPlay="True" />-->
             </local:ControlExample.Example>
             <local:ControlExample.Xaml>
                 <x:String xml:space="preserve">

@@ -69,7 +69,7 @@ namespace AppUIBasics.TabViewPages
                 titleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
                 titleBar.ButtonInactiveBackgroundColor = Windows.UI.Colors.Transparent;
 
-                Window.Current.SetTitleBar(CustomDragRegion);
+                //Window.Current.SetTitleBar(CustomDragRegion);
             }
             else
             {
@@ -127,7 +127,7 @@ namespace AppUIBasics.TabViewPages
             var newPage = new TabViewWindowingSamplePage();
             newPage.SetupWindow(newWindow);
 
-            ElementCompositionPreview.SetAppWindowContent(newWindow, newPage);
+            //ElementCompositionPreview.SetAppWindowContent(newWindow, newPage);
 
             Tabs.TabItems.Remove(args.Tab);
             newPage.AddTabToTabs(args.Tab);
