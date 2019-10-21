@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <!-- We'll handle XAML builds. So tell the SDK targets file to not use the XAML tools included in the SDK. -->
+        <UseSDKXamlTools>false</UseSDKXamlTools>
+        <!-- Setting this property, WindowsKitsPath, makes the VS SDK targets selector "not find the right path"
+             which is what we want until VS implements a proper selection for WinUI's targets. -->
+        <WindowsKitsPath>WinUI-Projects-Don-t-Use-SDK-Xaml-Tools</WindowsKitsPath>
+    </PropertyGroup>
+</Project>
