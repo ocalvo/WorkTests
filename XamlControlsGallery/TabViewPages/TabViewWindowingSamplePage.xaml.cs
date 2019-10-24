@@ -85,7 +85,8 @@ namespace AppUIBasics.TabViewPages
                 // Instead, set a hardcoded number. 
                 CustomDragRegion.MinWidth = 188;
 
-                window.Frame.DragRegionVisuals.Add(CustomDragRegion);
+                // TODO AppWindows do not work
+                //window.Frame.DragRegionVisuals.Add(CustomDragRegion);
             }
         }
 

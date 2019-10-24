@@ -1120,7 +1120,7 @@
       <Version>6.2.8</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.UI.Xaml">
-      <Version>3.0.9</Version>
+      <Version>3.0.12</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VCRTForwarders.140">
       <Version>1.0.2-rc</Version>
@@ -1139,6 +1139,7 @@
       <HintPath>INPUT\Microsoft.UI.Internal.Input.winmd</HintPath>
       <Implementation>Microsoft.UI.Input.dll</Implementation>
     </Reference-->
+    <Folder Include="en-US\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ColorCode.UWP">
@@ -1148,9 +1149,7 @@
       <Version>6.1.9</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="en-US\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

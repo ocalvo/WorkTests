@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using Windows.Foundation;
 using Windows.Foundation.Metadata;
-using Windows.UI.Composition;
+using Microsoft.UI.Composition;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Microsoft.UI.Xaml;

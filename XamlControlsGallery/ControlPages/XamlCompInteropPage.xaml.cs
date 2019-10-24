@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using Windows.Foundation.Metadata;
-using Windows.UI.Composition;
+using Microsoft.UI.Composition;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Automation;
 using Microsoft.UI.Xaml.Controls;
@@ -55,7 +55,7 @@ namespace AppUIBasics.ControlPages
             return TimeSpan.FromMilliseconds(PeriodSlider.Value);
         }
 
-        private void StartAnimationIfAPIPresent(UIElement sender, Windows.UI.Composition.CompositionAnimation animation)
+        private void StartAnimationIfAPIPresent(UIElement sender, Microsoft.UI.Composition.CompositionAnimation animation)
         {
             if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 7))
             {
