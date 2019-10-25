@@ -44,35 +44,6 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <Grid.Resources>
-            <Style x:Key="AutomationHelperStyle" TargetType="Control">
-                <Setter Property="IsTabStop" Value="False"/>
-                <Setter Property="IsHitTestVisible" Value="False"/>
-                <Setter Property="Width" Value="0"/>
-                <Setter Property="Height" Value="0"/>
-                <Setter Property="Opacity" Value="0"/>
-            </Style>
-        </Grid.Resources>
-        
-        <Grid x:Name="AutomationHelpersPanel">
-
-            <TextBlock x:Name="CurrentPageTextBlock" AutomationProperties.AutomationId="__CurrentPage"  FontSize="18" VerticalAlignment="Center" Margin="10,0,0,0"/>
-            <!-- Automation Helpers -->
-            <!-- These are not visible, but are used via UIA. They are fundamental to the operation of our test automation, so they should not be collapsed since 
-                                that prevents them from showing up in the UIA tree.-->
-            <Button x:Name="GoBackInvokerButton" AutomationProperties.AutomationId="__GoBackInvoker" Style="{StaticResource AutomationHelperStyle}" />
-            <Button x:Name="CloseAppInvokerButton" AutomationProperties.AutomationId="__CloseAppInvoker" Style="{StaticResource AutomationHelperStyle}" Click="CloseAppInvokerButton_Click"/>
-            <Button x:Name="WaitForIdleInvokerButton" AutomationProperties.AutomationId="__WaitForIdleInvoker" Style="{StaticResource AutomationHelperStyle}" Click="WaitForIdleInvokerButton_Click"/>
-            <CheckBox x:Name="_idleStateEnteredCheckBox" AutomationProperties.AutomationId="__IdleStateEnteredCheckBox" Style="{StaticResource AutomationHelperStyle}" />
-            <TextBox x:Name="_errorReportingTextBox" AutomationProperties.AutomationId="__ErrorReportingTextBox" Style="{StaticResource AutomationHelperStyle}" />
-            <TextBox x:Name="_logReportingTextBox" AutomationProperties.AutomationId="__LogReportingTextBox" Style="{StaticResource AutomationHelperStyle}" />
-            <CheckBox x:Name="ViewScalingCheckBox" AutomationProperties.AutomationId="__ViewScalingCheckBox" Style="{StaticResource AutomationHelperStyle}" />
-            <Button x:Name="WaitForDebuggerInvokerButton" AutomationProperties.AutomationId="__WaitForDebuggerInvoker" Style="{StaticResource AutomationHelperStyle}" />
-            <CheckBox x:Name="DebuggerAttachedCheckBox" AutomationProperties.AutomationId="__DebuggerAttachedCheckBox" Style="{StaticResource AutomationHelperStyle}" />
-            <TextBox x:Name="UnhandledExceptionReportingTextBox" AutomationProperties.AutomationId="__UnhandledExceptionReportingTextBox" Style="{StaticResource AutomationHelperStyle}" AcceptsReturn="True" />
-            <CheckBox x:Name="TestContentLoadedCheckBox" IsChecked="False" AutomationProperties.AutomationId="__TestContentLoadedCheckBox" Content="TestContentLoadedCheckbox"  Style="{StaticResource AutomationHelperStyle}" />
-
-        </Grid>
 
         <GridView x:Name="itemGridView"
             Padding="24,0,0,36"
@@ -89,24 +60,26 @@
             Loaded="OnItemGridViewLoaded"
             SizeChanged="OnItemGridViewSizeChanged"
             SelectionMode="None">
-            <!--interactivity:Interaction.Behaviors>
+            <!--
+            <interactivity:Interaction.Behaviors>
                 <behavior:ImageScrollBehavior TargetControl="{Binding ElementName=pageHeader}" />
-            </-->
+            </interactivity:Interaction.Behaviors>
+            -->
 
             <GridView.Header>
                 <Grid Margin="-24,0,0,24">
-                    <!--ParallaxView
+                    <ParallaxView
                         x:Name="headerImageView"
                         Height="250"
                         Margin="0,0,0,0"
                         Source="{x:Bind itemGridView}"
-                        VerticalShift="350"-->
+                        VerticalShift="350">
                         <Image
                             x:Name="headerImage"
                             HorizontalAlignment="Center"
                             Source="Assets/MainPage_Banner.jpg"
                             Stretch="UniformToFill" />
-                    <!--/-->
+                    </ParallaxView>
                     <Rectangle Height="60" VerticalAlignment="Top" Fill="{StaticResource HeroImageGradientBrush}"/>
                     <TextBlock x:Name="smallHeaderText"
                                Visibility="Collapsed"

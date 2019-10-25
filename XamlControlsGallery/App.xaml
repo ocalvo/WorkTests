@@ -46,20 +46,14 @@
                 <GradientStop Offset="1" Color="Transparent"/>
             </LinearGradientBrush>
 
-            <Style TargetType="Page">
-                <Setter Property="Transitions">
-                    <Setter.Value>
-                        <TransitionCollection />
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
+            <!--  Application-specific resources  -->
             <common:NullableBooleanToBooleanConverter x:Key="nullableBooleanToBooleanConverter" />
             <common:NullToVisibilityConverter x:Key="nullToVisibilityConverter" />
             <common:NullToVisibilityConverter x:Key="inverseNullToVisibilityConverter" NonNullValue="Collapsed" NullValue="Visible" />
             <common:BooleanToValueConverter x:Key="booleanToValueConverter" />
             <common:DoubleToThicknessConverter x:Key="doubleToThicknessConverter" />
 
+            <!--  Breakpoints  -->
             <x:Double x:Key="Breakpoint640Plus">641</x:Double>
 
             <x:String x:Key="ControlsName">All controls</x:String>
@@ -82,7 +76,7 @@
                 <Setter Property="ZoomMode" Value="Disabled" />
             </Style>
 
-            <Style x:Key="GridViewItemStyle" TargetType="GridViewItem" BasedOn="{StaticResource GridViewItemExpanded}">
+            <Style x:Key="GridViewItemStyle" TargetType="GridViewItem">
                 <Setter Property="Margin" Value="0,0,12,12" />
             </Style>
 
@@ -99,6 +93,7 @@
                 <Setter Property="Margin" Value="12,0,12,12" />
                 <Setter Property="HorizontalContentAlignment" Value="Stretch" />
             </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

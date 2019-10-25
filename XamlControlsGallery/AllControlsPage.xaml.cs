@@ -58,22 +58,22 @@ namespace AppUIBasics
 
         private async void WaitForIdleInvokerButton_Click(object sender, RoutedEventArgs e)
         {
-            _idleStateEnteredCheckBox.IsChecked = false;
+            //_idleStateEnteredCheckBox.IsChecked = false;
             await Windows.System.Threading.ThreadPool.RunAsync(WaitForIdleWorker);
 
-            _logReportingTextBox.Text = _log;
+            //_logReportingTextBox.Text = _log;
 
             if (_error.Length == 0)
             {
-                _idleStateEnteredCheckBox.IsChecked = true;
+                //_idleStateEnteredCheckBox.IsChecked = true;
             }
             else
             {
                 // Setting Text will raise a property-changed event, so even if we
                 // immediately set it back to the empty string, we'll still get the
                 // error-reported event that we can detect and handle.
-                _errorReportingTextBox.Text = _error;
-                _errorReportingTextBox.Text = string.Empty;
+                //_errorReportingTextBox.Text = _error;
+                //_errorReportingTextBox.Text = string.Empty;
 
                 _error = string.Empty;
             }

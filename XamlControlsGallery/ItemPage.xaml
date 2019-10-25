@@ -21,8 +21,6 @@
     x:Name="pageRoot"
     mc:Ignorable="d">
 
-    <Page.Transitions></Page.Transitions>
-
     <Page.Resources>
         <Storyboard x:Name="PopOutStoryboard">
             <PopOutThemeAnimation SpeedRatio="2" TargetName="seeAlsoPanel" />

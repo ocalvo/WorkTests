@@ -42,10 +42,10 @@
                     Width="36"
                     VerticalAlignment="Top"
                     AutomationProperties.Name="{x:Bind Title}"
-                    Source="{Binding ImagePath}"
+                    Source="{x:Bind ImagePath}"
                     Stretch="Uniform" />
 
-                <RelativePanel Grid.Column="1" Grid.ColumnSpan="2" Margin="16,6,0,0" Background="{x:Bind IncludedInBuild}">
+                <RelativePanel Grid.Column="1" Grid.ColumnSpan="2" Margin="16,6,0,0">
                     <TextBlock
                         x:Name="titleText"
                         Style="{StaticResource SubtitleTextBlockStyle}"

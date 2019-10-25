@@ -63,24 +63,26 @@
             Loaded="OnItemGridViewLoaded"
             SizeChanged="OnItemGridViewSizeChanged"
             SelectionMode="None">
-            <!--interactivity:Interaction.Behaviors>
+            <!--
+            <interactivity:Interaction.Behaviors>
                 <behavior:ImageScrollBehavior TargetControl="{Binding ElementName=pageHeader}" />
-            </-->
+            </interactivity:Interaction.Behaviors>
+            -->
 
             <GridView.Header>
                 <Grid Margin="-12,0,-12,24" Height="250">
-                    <!--ParallaxView
+                    <ParallaxView
                         x:Name="headerImageView"
                         Height="250"
                         Margin="0,0,0,0"
                         Source="{x:Bind itemGridView}"
-                        VerticalShift="350"-->
+                        VerticalShift="350">
                         <Image
                             x:Name="headerImage"
                             HorizontalAlignment="Center"
                             Source="Assets/MainPage_Banner.jpg"
                             Stretch="UniformToFill" />
-                    <!--/-->
+                    </ParallaxView>
                     <Rectangle Height="60" VerticalAlignment="Top" Fill="{StaticResource HeroImageGradientBrush}"/>
                     <TextBlock x:Name="smallHeaderText"
                                Visibility="Collapsed"

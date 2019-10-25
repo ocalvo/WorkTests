@@ -20,8 +20,6 @@ using Windows.ApplicationModel.Core;
 using Windows.Foundation.Metadata;
 using Windows.Storage;
 using Windows.System.Profile;
-using Windows.UI;
-using Windows.UI.ViewManagement;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
@@ -118,193 +116,155 @@ namespace AppUIBasics
 
         private void App_Resuming(object sender, object e)
         {
-            //switch (NavigationRootPage.RootFrame?.Content)
-            //{
-            //    case ItemPage itemPage:
-            //        itemPage.SetInitialVisuals();
-            //        break;
-            //    case NewControlsPage newControlsPage:
-            //    case AllControlsPage allControlsPage:
-            //        NavigationRootPage.Current.NavigationView.AlwaysShowHeader = false;
-            //        break;
-            //}
+            switch (NavigationRootPage.RootFrame?.Content)
+            {
+                case ItemPage itemPage:
+                    itemPage.SetInitialVisuals();
+                    break;
+                case NewControlsPage newControlsPage:
+                case AllControlsPage allControlsPage:
+                    NavigationRootPage.Current.NavigationView.AlwaysShowHeader = false;
+                    break;
+            }
         }
-        protected override async void OnLaunched(LaunchActivatedEventArgs e)
+
+        /// <summary>
+        /// Invoked when the application is launched normally by the end user.  Other entry points
+        /// will be used such as when the application is launched to open a specific file.
+        /// </summary>
+        /// <param name="e">Details about the launch request and process.</param>
+        protected override async void OnLaunched(LaunchActivatedEventArgs args)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
+#if DEBUG
+            //if (System.Diagnostics.Debugger.IsAttached)
+            //{
+            //    this.DebugSettings.EnableFrameRateCounter = true;
+            //}
+
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                this.DebugSettings.BindingFailed += DebugSettings_BindingFailed;
+            }
+#endif
+            //draw into the title bar
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            
+            await EnsureWindow(args);
+        }
+
+        private void DebugSettings_BindingFailed(object sender, BindingFailedEventArgs e)
+        {
+            
+        }
+
+        protected async override void OnActivated(IActivatedEventArgs args)
+        {
+            await EnsureWindow(args);
+
+            base.OnActivated(args);
+        }
+
+        private async Task EnsureWindow(IActivatedEventArgs args)
+        {
+            // No matter what our destination is, we're going to need control data loaded - let's knock that out now.
+            // We'll never need to do this again.
             await ControlInfoDataSource.Instance.GetGroupsAsync();
 
-            // Do not repeat app initialization when the Window already has content,
-            // just ensure that the window is active
-            if (rootFrame == null)
+            Frame rootFrame = GetRootFrame();
+
+            string savedTheme = ApplicationData.Current.LocalSettings.Values[SelectedAppThemeKey]?.ToString();
+
+            if (savedTheme != null)
             {
-                // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
-
-                rootFrame.NavigationFailed += OnNavigationFailed;
-
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
-                {
-                    //TODO: Load state from previously suspended application
-                }
-
-                // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
+                RootTheme = GetEnum<ElementTheme>(savedTheme);
             }
 
-            if (e.PrelaunchActivated == false)
+            Type targetPageType = typeof(NewControlsPage);
+            string targetPageArguments = string.Empty;
+
+            if (args.Kind == ActivationKind.Launch)
             {
-                if (rootFrame.Content == null)
+                if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    // When the navigation stack isn't restored navigate to the first page,
-                    // configuring the new page by passing required information as a navigation
-                    // parameter
-                    rootFrame.Navigate(typeof(AllControlsPage), e.Arguments);
-                    //rootFrame.Navigate(typeof(MiniMainPage), e.Arguments);
+                    try
+                    {
+                        await SuspensionManager.RestoreAsync();
+                    }
+                    catch (SuspensionManagerException)
+                    {
+                        //Something went wrong restoring state.
+                        //Assume there is no state and continue
+                    }
                 }
-                // Ensure the current window is active
-                Window.Current.Activate();
+
+                targetPageArguments = ((LaunchActivatedEventArgs)args).Arguments;
             }
+            else if (args.Kind == ActivationKind.Protocol)
+            {
+                Match match;
+
+                string targetId = string.Empty;
+
+                switch (((ProtocolActivatedEventArgs)args).Uri?.AbsolutePath)
+                {
+                    case string s when IsMatching(s, "/category/(.*)"):
+                        targetId = match.Groups[1]?.ToString();
+                        if (ControlInfoDataSource.Instance.Groups.Any(g => g.UniqueId == targetId))
+                        {
+                            targetPageType = typeof(SectionPage);
+                        }
+                        break;
+
+                    case string s when IsMatching(s, "/item/(.*)"):
+                        targetId = match.Groups[1]?.ToString();
+                        if (ControlInfoDataSource.Instance.Groups.Any(g => g.Items.Any(i => i.UniqueId == targetId)))
+                        {
+                            targetPageType = typeof(ItemPage);
+                        }
+                        break;
+                }
+
+                targetPageArguments = targetId;
+
+                bool IsMatching(string parent, string expression)
+                {
+                    match = Regex.Match(parent, expression);
+                    return match.Success;
+                }
+            }
+
+            rootFrame.Navigate(targetPageType, targetPageArguments);
+            ((Microsoft.UI.Xaml.Controls.NavigationViewItem)(((NavigationRootPage)(Window.Current.Content)).NavigationView.MenuItems[0])).IsSelected = true;
+
+            // Ensure the current window is active
+            Window.Current.Activate();
         }
 
+        private Frame GetRootFrame()
+        {
+            Frame rootFrame;
+            NavigationRootPage rootPage = Window.Current.Content as NavigationRootPage;
+            if (rootPage == null)
+            {
+                rootPage = new NavigationRootPage();
+                rootFrame = (Frame)rootPage.FindName("rootFrame");
+                if (rootFrame == null)
+                {
+                    throw new Exception("Root frame not found");
+                }
+                SuspensionManager.RegisterFrame(rootFrame, "AppFrame");
+                rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
+                rootFrame.NavigationFailed += OnNavigationFailed;
 
-        //        /// <summary>
-        //        /// Invoked when the application is launched normally by the end user.  Other entry points
-        //        /// will be used such as when the application is launched to open a specific file.
-        //        /// </summary>
-        //        /// <param name="e">Details about the launch request and process.</param>
-        //        protected override async void OnLaunched(LaunchActivatedEventArgs args)
-        //        {
-        //#if DEBUG
-        //            //if (System.Diagnostics.Debugger.IsAttached)
-        //            //{
-        //            //    this.DebugSettings.EnableFrameRateCounter = true;
-        //            //}
+                Window.Current.Content = rootPage;
+            }
+            else
+            {
+                rootFrame = (Frame)rootPage.FindName("rootFrame");
+            }
 
-        //            if (System.Diagnostics.Debugger.IsAttached)
-        //            {
-        //                this.DebugSettings.BindingFailed += DebugSettings_BindingFailed;
-        //            }
-        //#endif
-        //            //draw into the title bar
-        //            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
-
-        //            await EnsureWindow(args);
-        //        }
-
-        //        private void DebugSettings_BindingFailed(object sender, BindingFailedEventArgs e)
-        //        {
-
-        //        }
-
-        //protected async override void OnActivated(IActivatedEventArgs args)
-        //{
-        //    await EnsureWindow(args);
-
-        //    base.OnActivated(args);
-        //}
-
-        //private async Task EnsureWindow(IActivatedEventArgs args)
-        //{
-        //    // No matter what our destination is, we're going to need control data loaded - let's knock that out now.
-        //    // We'll never need to do this again.
-        //    await ControlInfoDataSource.Instance.GetGroupsAsync();
-
-        //    Frame rootFrame = GetRootFrame();
-
-        //    string savedTheme = ApplicationData.Current.LocalSettings.Values[SelectedAppThemeKey]?.ToString();
-
-        //    if (savedTheme != null)
-        //    {
-        //        RootTheme = GetEnum<ElementTheme>(savedTheme);
-        //    }
-
-        //    Type targetPageType = typeof(NewControlsPage);
-        //    string targetPageArguments = string.Empty;
-
-        //    if (args.Kind == ActivationKind.Launch)
-        //    {
-        //        if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
-        //        {
-        //            try
-        //            {
-        //                await SuspensionManager.RestoreAsync();
-        //            }
-        //            catch (SuspensionManagerException)
-        //            {
-        //                //Something went wrong restoring state.
-        //                //Assume there is no state and continue
-        //            }
-        //        }
-
-        //        targetPageArguments = ((LaunchActivatedEventArgs)args).Arguments;
-        //    }
-        //    else if (args.Kind == ActivationKind.Protocol)
-        //    {
-        //        Match match;
-
-        //        string targetId = string.Empty;
-
-        //        switch (((ProtocolActivatedEventArgs)args).Uri?.AbsolutePath)
-        //        {
-        //            case string s when IsMatching(s, "/category/(.*)"):
-        //                targetId = match.Groups[1]?.ToString();
-        //                if (ControlInfoDataSource.Instance.Groups.Any(g => g.UniqueId == targetId))
-        //                {
-        //                    targetPageType = typeof(SectionPage);
-        //                }
-        //                break;
-
-        //            case string s when IsMatching(s, "/item/(.*)"):
-        //                targetId = match.Groups[1]?.ToString();
-        //                if (ControlInfoDataSource.Instance.Groups.Any(g => g.Items.Any(i => i.UniqueId == targetId)))
-        //                {
-        //                    targetPageType = typeof(ItemPage);
-        //                }
-        //                break;
-        //        }
-
-        //        targetPageArguments = targetId;
-
-        //        bool IsMatching(string parent, string expression)
-        //        {
-        //            match = Regex.Match(parent, expression);
-        //            return match.Success;
-        //        }
-        //    }
-
-        //    rootFrame.Navigate(targetPageType, targetPageArguments);
-        //    ((Microsoft.UI.Xaml.Controls.NavigationViewItem)(((NavigationRootPage)(Window.Current.Content)).NavigationView.MenuItems[0])).IsSelected = true;
-
-        //    // Ensure the current window is active
-        //    Window.Current.Activate();
-        //}
-
-        //private Frame GetRootFrame()
-        //{
-        //    Frame rootFrame;
-        //    NavigationRootPage rootPage = Window.Current.Content as NavigationRootPage;
-        //    if (rootPage == null)
-        //    {
-        //        rootPage = new NavigationRootPage();
-        //        rootFrame = (Frame)rootPage.FindName("rootFrame");
-        //        if (rootFrame == null)
-        //        {
-        //            throw new Exception("Root frame not found");
-        //        }
-        //        SuspensionManager.RegisterFrame(rootFrame, "AppFrame");
-        //        rootFrame.Language = Windows.Globalization.ApplicationLanguages.Languages[0];
-        //        rootFrame.NavigationFailed += OnNavigationFailed;
-
-        //        Window.Current.Content = rootPage;
-        //    }
-        //    else
-        //    {
-        //        rootFrame = (Frame)rootPage.FindName("rootFrame");
-        //    }
-
-        //    return rootFrame;
-        //}
+            return rootFrame;
+        }
 
         /// <summary>
         /// Invoked when Navigation to a certain page fails
