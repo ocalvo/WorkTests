@@ -24,7 +24,7 @@
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
-    <AppxBundle>Always</AppxBundle>
+    <AppxBundle>Never</AppxBundle>
     <AppxBundlePlatforms>x86</AppxBundlePlatforms>
     <AppInstallerUri>http://microsoft.com</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
@@ -1108,39 +1108,31 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <!--Content Include="INPUT\*.dll">
-      <Link>%(Filename)%(Extension)</Link>
-    </Content-->
-    <Content Include="MUX\en-us\*.mui">
-      <Link>en-US\%(Filename)%(Extension)</Link>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.UI.Xaml">
-      <Version>3.0.12</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VCRTForwarders.140">
       <Version>1.0.2-rc</Version>
     </PackageReference>
   </ItemGroup>
+  <PropertyGroup>
+    <MUX_Ver>3.0.12</MUX_Ver>
+  </PropertyGroup>
   <ItemGroup>
-    <!--Reference Include="Microsoft.System">
-      <HintPath>INPUT\Microsoft.System.winmd</HintPath>
-      <Implementation>CoreMessagingXP.dll</Implementation>
-    </Reference>
-    <Reference Include="Microsoft.UI.Composition">
-      <HintPath>INPUT\Microsoft.UI.Composition.winmd</HintPath>
-      <Implementation>dcompi.dll</Implementation>
-    </Reference>
-    <Reference Include="Microsoft.UI.Internal.Input">
-      <HintPath>INPUT\Microsoft.UI.Internal.Input.winmd</HintPath>
-      <Implementation>Microsoft.UI.Input.dll</Implementation>
-    </Reference-->
-    <Folder Include="en-US\" />
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>$(MUX_Ver)</Version>
+    </PackageReference>
+    <Content Include="$(NuGetPackageRoot)\Microsoft.UI.Xaml\$(MUX_Ver)\runtimes\win10-x86\native\*.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <ReferenceCopyLocalPaths Include="$(NuGetPackageRoot)\Microsoft.UI.Xaml\$(MUX_Ver)\runtimes\win10-x86\native\*.pdb">
+    </ReferenceCopyLocalPaths>
+    <Content Include="$(NuGetPackageRoot)\Microsoft.UI.Xaml\$(MUX_Ver)\runtimes\win10-x86\native\en-us\*.dll.mui">
+      <Link>en-US\%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="ColorCode.UWP">
       <Version>2.0.5</Version>
@@ -1149,7 +1141,6 @@
       <Version>6.1.9</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
