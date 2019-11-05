@@ -9,7 +9,7 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
-        <TextBlock Text="{Binding Label}"/>
-    </Grid>
+    <StackPanel>
+        <Button>A managed user control</Button>
+    </StackPanel>
 </UserControl>
