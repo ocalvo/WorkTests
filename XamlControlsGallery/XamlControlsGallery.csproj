@@ -1111,16 +1111,18 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>
     </PackageReference>
+    <!--
     <PackageReference Include="Microsoft.VCRTForwarders.140">
       <Version>1.0.2-rc</Version>
     </PackageReference>
+    -->
   </ItemGroup>
   <PropertyGroup>
-    <MUX_Ver>3.0.12</MUX_Ver>
+    <MUX_Ver>3.0.0-alpha.191026.2</MUX_Ver>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.UI.Xaml">
-      <Version>$(MUX_Ver)</Version>
+      <Version>3.0.0-alpha.191030.7rel</Version>
     </PackageReference>
     <Content Include="$(NuGetPackageRoot)\Microsoft.UI.Xaml\$(MUX_Ver)\runtimes\win10-x86\native\*.pdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
