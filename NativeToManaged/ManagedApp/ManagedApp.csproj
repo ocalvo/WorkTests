@@ -155,9 +155,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ManagedComponent\ManagedComponent.csproj">
+    <ProjectReference Include="..\ManagedComponent\SampleLibraryCS.csproj">
       <Project>{8714c298-3b3b-4993-a258-6054ef89289a}</Project>
-      <Name>ManagedComponent</Name>
+      <Name>SampleLibraryCS</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

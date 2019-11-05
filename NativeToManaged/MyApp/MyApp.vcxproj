@@ -156,7 +156,7 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ManagedComponent\ManagedComponent.csproj">
+    <ProjectReference Include="..\ManagedComponent\SampleLibraryCS.csproj">
       <Project>{8714c298-3b3b-4993-a258-6054ef89289a}</Project>
     </ProjectReference>
     <!-- 

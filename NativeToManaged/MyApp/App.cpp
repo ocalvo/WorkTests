@@ -21,7 +21,7 @@ App::App()
 {
     InitializeComponent();
 
-    auto c = winrt::ManagedComponent::MyUserControl();
+    auto c = winrt::SampleLibraryCS::MyUserControl(0);
 
     Suspending({ this, &App::OnSuspending });
 

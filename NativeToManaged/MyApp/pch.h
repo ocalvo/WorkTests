@@ -13,5 +13,5 @@
 #include <winrt/Windows.UI.Xaml.Interop.h>
 #include <winrt/Windows.UI.Xaml.Markup.h>
 #include <winrt/Windows.UI.Xaml.Navigation.h>
-#include <winrt/ManagedComponent.h>
-#include <winrt/ManagedComponent.ManagedComponent_XamlTypeInfo.h>
+#include <winrt/SampleLibraryCS.h>
+#include <winrt/SampleLibraryCS.SampleLibraryCS_XamlTypeInfo.h>

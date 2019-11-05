@@ -7,8 +7,8 @@
     <ProjectGuid>{8714C298-3B3B-4993-A258-6054EF89289A}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManagedComponent</RootNamespace>
-    <AssemblyName>ManagedComponent</AssemblyName>
+    <RootNamespace>SampleLibraryCS</RootNamespace>
+    <AssemblyName>SampleLibraryCS</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>

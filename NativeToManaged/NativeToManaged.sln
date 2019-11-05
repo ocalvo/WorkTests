@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29411.138
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApp", "MyApp\MyApp.vcxproj", "{7DA9E0C7-90E0-402E-98F3-3E1D9528E4D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedComponent", "ManagedComponent\ManagedComponent.csproj", "{8714C298-3B3B-4993-A258-6054EF89289A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLibraryCS", "ManagedComponent\SampleLibraryCS.csproj", "{8714C298-3B3B-4993-A258-6054EF89289A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedApp", "ManagedApp\ManagedApp.csproj", "{F4E31FFA-4EF9-4911-B523-6AF6C5218398}"
 EndProject
